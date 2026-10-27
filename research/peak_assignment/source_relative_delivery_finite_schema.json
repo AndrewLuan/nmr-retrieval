@@ -1,214 +1,607 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Finite source-relative test metadata; no actual completion generated",
-  "type": "object",
-  "required": [
-    "schema",
-    "scope_acceptance_sha256",
-    "fixed_identity_manifest",
-    "H_fixed_test",
-    "C_native_test"
-  ],
-  "not": {
-    "required": [
-      "fixed_test_passes"
-    ]
-  },
-  "properties": {
-    "schema": {
-      "const": "source_relative_fixed_test_H_unavailable_C_complete_v1"
-    },
-    "scope_acceptance_sha256": {
-      "const": "7889f813ced7fbe525ed7c3bd1a787a62c31d34008b53813492ddc1cae5253bb"
-    },
-    "fixed_identity_manifest": {
-      "$ref": "#/$defs/evidence"
-    },
-    "H_fixed_test": {
+  "title": "Source-relative finite delivery: original once-success OR explicit conditional segmented accounting",
+  "oneOf": [
+    {
       "type": "object",
       "required": [
-        "original_identity_count",
-        "historical_identity_counts",
-        "identity_order_sha256",
-        "retained_ids",
-        "H_fixed_test_scoring_runs",
-        "H_fixed_test_model_calls",
-        "H_fixed_test_assignment_complete",
-        "assignment_metrics",
-        "status",
-        "replacement_observations",
-        "A_actual",
-        "A_application_review",
-        "unevaluable_retained_not_replaced"
+        "schema",
+        "scope_acceptance_sha256",
+        "fixed_identity_manifest",
+        "H_fixed_test",
+        "C_native_test"
       ],
+      "not": {
+        "required": [
+          "fixed_test_passes"
+        ]
+      },
       "properties": {
-        "original_identity_count": {
-          "const": 1371
+        "schema": {
+          "const": "source_relative_fixed_test_H_unavailable_C_complete_v1"
         },
-        "historical_identity_counts": {
-          "const": {
-            "observed": 1000,
-            "frequency_crop": 200,
-            "peak_dropout": 171
-          }
+        "scope_acceptance_sha256": {
+          "const": "7889f813ced7fbe525ed7c3bd1a787a62c31d34008b53813492ddc1cae5253bb"
         },
-        "identity_order_sha256": {
-          "type": "string",
-          "pattern": "^[0-9a-f]{64}$"
-        },
-        "retained_ids": {
-          "type": "array",
-          "minItems": 1371,
-          "maxItems": 1371,
-          "uniqueItems": true
-        },
-        "H_fixed_test_scoring_runs": {
-          "const": 0
-        },
-        "H_fixed_test_model_calls": {
-          "const": 0
-        },
-        "H_fixed_test_assignment_complete": {
-          "const": false
-        },
-        "assignment_metrics": {
-          "type": "null"
-        },
-        "status": {
-          "const": "unavailable"
-        },
-        "replacement_observations": {
-          "const": false
-        },
-        "A_actual": {
+        "fixed_identity_manifest": {
           "$ref": "#/$defs/evidence"
         },
-        "A_application_review": {
-          "$ref": "#/$defs/review"
-        },
-        "unevaluable_retained_not_replaced": {
-          "const": true
-        }
-      }
-    },
-    "C_native_test": {
-      "type": "object",
-      "required": [
-        "original_identity_count",
-        "scorequeue",
-        "source_unknown",
-        "prediction_available",
-        "prediction_failed_retained",
-        "actual_prediction_runs",
-        "actual_package_runs",
-        "actual_scoring_runs",
-        "actual_report_runs",
-        "identity_order_sha256",
-        "retained_ids",
-        "scorequeue_ids",
-        "unevaluable_retained_not_replaced",
-        "cache_failed_eligible_retained",
-        "freeze_before_evaluation_verified",
-        "suite_manifest",
-        "owner_release",
-        "phases"
-      ],
-      "properties": {
-        "original_identity_count": {
-          "const": 3637
-        },
-        "scorequeue": {
-          "const": 3636
-        },
-        "source_unknown": {
-          "const": 1
-        },
-        "prediction_available": {
-          "const": 3635
-        },
-        "prediction_failed_retained": {
-          "const": 1
-        },
-        "actual_prediction_runs": {
-          "const": 1
-        },
-        "actual_package_runs": {
-          "const": 1
-        },
-        "actual_scoring_runs": {
-          "const": 1
-        },
-        "actual_report_runs": {
-          "const": 1
-        },
-        "identity_order_sha256": {
-          "type": "string",
-          "pattern": "^[0-9a-f]{64}$"
-        },
-        "retained_ids": {
-          "type": "array",
-          "minItems": 3637,
-          "maxItems": 3637,
-          "uniqueItems": true
-        },
-        "scorequeue_ids": {
-          "type": "array",
-          "minItems": 3636,
-          "maxItems": 3636,
-          "uniqueItems": true
-        },
-        "unevaluable_retained_not_replaced": {
-          "const": true
-        },
-        "cache_failed_eligible_retained": {
-          "const": true
-        },
-        "freeze_before_evaluation_verified": {
-          "const": true
-        },
-        "suite_manifest": {
-          "$ref": "#/$defs/evidence"
-        },
-        "owner_release": {
-          "$ref": "#/$defs/evidence"
-        },
-        "phases": {
+        "H_fixed_test": {
           "type": "object",
           "required": [
-            "prediction",
-            "package",
-            "score",
-            "report"
+            "original_identity_count",
+            "historical_identity_counts",
+            "identity_order_sha256",
+            "retained_ids",
+            "H_fixed_test_scoring_runs",
+            "H_fixed_test_model_calls",
+            "H_fixed_test_assignment_complete",
+            "assignment_metrics",
+            "status",
+            "replacement_observations",
+            "A_actual",
+            "A_application_review",
+            "unevaluable_retained_not_replaced"
           ],
-          "additionalProperties": false,
           "properties": {
-            "prediction": {
-              "allOf": [
-                {
+            "original_identity_count": {
+              "const": 1371
+            },
+            "historical_identity_counts": {
+              "const": {
+                "observed": 1000,
+                "frequency_crop": 200,
+                "peak_dropout": 171
+              }
+            },
+            "identity_order_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "retained_ids": {
+              "type": "array",
+              "minItems": 1371,
+              "maxItems": 1371,
+              "uniqueItems": true
+            },
+            "H_fixed_test_scoring_runs": {
+              "const": 0
+            },
+            "H_fixed_test_model_calls": {
+              "const": 0
+            },
+            "H_fixed_test_assignment_complete": {
+              "const": false
+            },
+            "assignment_metrics": {
+              "type": "null"
+            },
+            "status": {
+              "const": "unavailable"
+            },
+            "replacement_observations": {
+              "const": false
+            },
+            "A_actual": {
+              "$ref": "#/$defs/evidence"
+            },
+            "A_application_review": {
+              "$ref": "#/$defs/review"
+            },
+            "unevaluable_retained_not_replaced": {
+              "const": true
+            }
+          }
+        },
+        "C_native_test": {
+          "type": "object",
+          "required": [
+            "original_identity_count",
+            "scorequeue",
+            "source_unknown",
+            "prediction_available",
+            "prediction_failed_retained",
+            "actual_prediction_runs",
+            "actual_package_runs",
+            "actual_scoring_runs",
+            "actual_report_runs",
+            "identity_order_sha256",
+            "retained_ids",
+            "scorequeue_ids",
+            "unevaluable_retained_not_replaced",
+            "cache_failed_eligible_retained",
+            "freeze_before_evaluation_verified",
+            "suite_manifest",
+            "owner_release",
+            "phases"
+          ],
+          "properties": {
+            "original_identity_count": {
+              "const": 3637
+            },
+            "scorequeue": {
+              "const": 3636
+            },
+            "source_unknown": {
+              "const": 1
+            },
+            "prediction_available": {
+              "const": 3635
+            },
+            "prediction_failed_retained": {
+              "const": 1
+            },
+            "actual_prediction_runs": {
+              "const": 1
+            },
+            "actual_package_runs": {
+              "const": 1
+            },
+            "actual_scoring_runs": {
+              "const": 1
+            },
+            "actual_report_runs": {
+              "const": 1
+            },
+            "identity_order_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "retained_ids": {
+              "type": "array",
+              "minItems": 3637,
+              "maxItems": 3637,
+              "uniqueItems": true
+            },
+            "scorequeue_ids": {
+              "type": "array",
+              "minItems": 3636,
+              "maxItems": 3636,
+              "uniqueItems": true
+            },
+            "unevaluable_retained_not_replaced": {
+              "const": true
+            },
+            "cache_failed_eligible_retained": {
+              "const": true
+            },
+            "freeze_before_evaluation_verified": {
+              "const": true
+            },
+            "suite_manifest": {
+              "$ref": "#/$defs/evidence"
+            },
+            "owner_release": {
+              "$ref": "#/$defs/evidence"
+            },
+            "phases": {
+              "type": "object",
+              "required": [
+                "prediction",
+                "package",
+                "score",
+                "report"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "prediction": {
+                  "allOf": [
+                    {
+                      "$ref": "#/$defs/phase"
+                    },
+                    {
+                      "required": [
+                        "prediction_receipt",
+                        "prediction_receipt_inventory_key"
+                      ]
+                    }
+                  ]
+                },
+                "package": {
                   "$ref": "#/$defs/phase"
                 },
-                {
-                  "required": [
-                    "prediction_receipt",
-                    "prediction_receipt_inventory_key"
-                  ]
+                "score": {
+                  "$ref": "#/$defs/phase"
+                },
+                "report": {
+                  "$ref": "#/$defs/phase"
                 }
-              ]
-            },
-            "package": {
-              "$ref": "#/$defs/phase"
-            },
-            "score": {
-              "$ref": "#/$defs/phase"
-            },
-            "report": {
-              "$ref": "#/$defs/phase"
+              }
             }
           }
         }
       }
+    },
+    {
+      "type": "object",
+      "required": [
+        "schema",
+        "scope_acceptance_sha256",
+        "fixed_identity_manifest",
+        "H_fixed_test",
+        "C_native_test",
+        "conditional_scope_authorization"
+      ],
+      "not": {
+        "required": [
+          "fixed_test_passes"
+        ]
+      },
+      "properties": {
+        "schema": {
+          "const": "source_relative_segmented_H_unavailable_C_complete_v1"
+        },
+        "scope_acceptance_sha256": {
+          "const": "7889f813ced7fbe525ed7c3bd1a787a62c31d34008b53813492ddc1cae5253bb"
+        },
+        "fixed_identity_manifest": {
+          "$ref": "#/$defs/evidence"
+        },
+        "H_fixed_test": {
+          "type": "object",
+          "required": [
+            "original_identity_count",
+            "historical_identity_counts",
+            "identity_order_sha256",
+            "retained_ids",
+            "H_fixed_test_scoring_runs",
+            "H_fixed_test_model_calls",
+            "H_fixed_test_assignment_complete",
+            "assignment_metrics",
+            "status",
+            "replacement_observations",
+            "A_actual",
+            "A_application_review",
+            "unevaluable_retained_not_replaced"
+          ],
+          "properties": {
+            "original_identity_count": {
+              "const": 1371
+            },
+            "historical_identity_counts": {
+              "const": {
+                "observed": 1000,
+                "frequency_crop": 200,
+                "peak_dropout": 171
+              }
+            },
+            "identity_order_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "retained_ids": {
+              "type": "array",
+              "minItems": 1371,
+              "maxItems": 1371,
+              "uniqueItems": true
+            },
+            "H_fixed_test_scoring_runs": {
+              "const": 0
+            },
+            "H_fixed_test_model_calls": {
+              "const": 0
+            },
+            "H_fixed_test_assignment_complete": {
+              "const": false
+            },
+            "assignment_metrics": {
+              "type": "null"
+            },
+            "status": {
+              "const": "unavailable"
+            },
+            "replacement_observations": {
+              "const": false
+            },
+            "A_actual": {
+              "$ref": "#/$defs/evidence"
+            },
+            "A_application_review": {
+              "$ref": "#/$defs/review"
+            },
+            "unevaluable_retained_not_replaced": {
+              "const": true
+            }
+          }
+        },
+        "C_native_test": {
+          "type": "object",
+          "required": [
+            "original_identity_count",
+            "scorequeue",
+            "source_unknown",
+            "prediction_available",
+            "prediction_failed_retained",
+            "actual_prediction_runs",
+            "actual_package_runs",
+            "actual_scoring_runs",
+            "actual_report_runs",
+            "identity_order_sha256",
+            "retained_ids",
+            "scorequeue_ids",
+            "unevaluable_retained_not_replaced",
+            "cache_failed_eligible_retained",
+            "freeze_before_evaluation_verified",
+            "suite_manifest",
+            "owner_release",
+            "phases",
+            "execution_protocol",
+            "original_single7200_complete",
+            "actual_completion_segments",
+            "original_score",
+            "partition",
+            "partition_application_review",
+            "completion_sources",
+            "completion_segment",
+            "segmented_report"
+          ],
+          "properties": {
+            "original_identity_count": {
+              "const": 3637
+            },
+            "scorequeue": {
+              "const": 3636
+            },
+            "source_unknown": {
+              "const": 1
+            },
+            "prediction_available": {
+              "const": 3635
+            },
+            "prediction_failed_retained": {
+              "const": 1
+            },
+            "actual_prediction_runs": {
+              "const": 1
+            },
+            "actual_package_runs": {
+              "const": 1
+            },
+            "actual_scoring_runs": {
+              "const": 1
+            },
+            "actual_report_runs": {
+              "const": 1
+            },
+            "identity_order_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "retained_ids": {
+              "type": "array",
+              "minItems": 3637,
+              "maxItems": 3637,
+              "uniqueItems": true
+            },
+            "scorequeue_ids": {
+              "type": "array",
+              "minItems": 3636,
+              "maxItems": 3636,
+              "uniqueItems": true
+            },
+            "unevaluable_retained_not_replaced": {
+              "const": true
+            },
+            "cache_failed_eligible_retained": {
+              "const": true
+            },
+            "freeze_before_evaluation_verified": {
+              "const": true
+            },
+            "suite_manifest": {
+              "$ref": "#/$defs/evidence"
+            },
+            "owner_release": {
+              "$ref": "#/$defs/evidence"
+            },
+            "phases": {
+              "type": "object",
+              "required": [
+                "prediction",
+                "package"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "prediction": {
+                  "allOf": [
+                    {
+                      "$ref": "#/$defs/phase"
+                    },
+                    {
+                      "required": [
+                        "prediction_receipt",
+                        "prediction_receipt_inventory_key"
+                      ]
+                    }
+                  ]
+                },
+                "package": {
+                  "$ref": "#/$defs/phase"
+                }
+              }
+            },
+            "execution_protocol": {
+              "const": "original_partial_plus_one_completion_segment"
+            },
+            "original_single7200_complete": {
+              "const": false
+            },
+            "actual_completion_segments": {
+              "const": 1
+            },
+            "original_score": {
+              "type": "object",
+              "required": [
+                "actual_receipt",
+                "claim",
+                "scoring_plan",
+                "partial_inventory",
+                "input_inventory",
+                "output_root",
+                "application_review"
+              ],
+              "properties": {
+                "actual_receipt": {
+                  "$ref": "#/$defs/evidence"
+                },
+                "claim": {
+                  "$ref": "#/$defs/evidence"
+                },
+                "scoring_plan": {
+                  "$ref": "#/$defs/evidence"
+                },
+                "partial_inventory": {
+                  "$ref": "#/$defs/evidence"
+                },
+                "input_inventory": {
+                  "$ref": "#/$defs/evidence"
+                },
+                "output_root": {
+                  "type": "string"
+                },
+                "application_review": {
+                  "allOf": [
+                    {
+                      "$ref": "#/$defs/review"
+                    },
+                    {
+                      "required": [
+                        "partial_inventory_sha256_path",
+                        "input_inventory_sha256_path"
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            "partition": {
+              "$ref": "#/$defs/evidence"
+            },
+            "partition_application_review": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/review"
+                },
+                {
+                  "required": [
+                    "partial_inventory_sha256_path"
+                  ]
+                }
+              ]
+            },
+            "completion_sources": {
+              "type": "object",
+              "required": [
+                "sources",
+                "independent_source_review"
+              ],
+              "properties": {
+                "sources": {
+                  "type": "object",
+                  "required": [
+                    "completion",
+                    "completion_supervisor",
+                    "completion_report",
+                    "tests"
+                  ],
+                  "additionalProperties": {
+                    "$ref": "#/$defs/evidence"
+                  }
+                },
+                "independent_source_review": {
+                  "$ref": "#/$defs/evidence"
+                }
+              }
+            },
+            "completion_segment": {
+              "type": "object",
+              "required": [
+                "plan",
+                "release",
+                "claim",
+                "started_inventory",
+                "execution"
+              ],
+              "properties": {
+                "plan": {
+                  "$ref": "#/$defs/evidence"
+                },
+                "release": {
+                  "$ref": "#/$defs/evidence"
+                },
+                "claim": {
+                  "$ref": "#/$defs/evidence"
+                },
+                "started_inventory": {
+                  "$ref": "#/$defs/evidence"
+                },
+                "execution": {
+                  "allOf": [
+                    {
+                      "$ref": "#/$defs/segmented_execution"
+                    },
+                    {
+                      "properties": {
+                        "application_review": {
+                          "required": [
+                            "started_inventory_sha256_path"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "segmented_report": {
+              "type": "object",
+              "required": [
+                "plan",
+                "release",
+                "frozen_implementations",
+                "execution"
+              ],
+              "properties": {
+                "plan": {
+                  "$ref": "#/$defs/evidence"
+                },
+                "release": {
+                  "$ref": "#/$defs/evidence"
+                },
+                "frozen_implementations": {
+                  "type": "object",
+                  "required": [
+                    "estimators",
+                    "report_P1"
+                  ],
+                  "additionalProperties": {
+                    "$ref": "#/$defs/evidence"
+                  }
+                },
+                "execution": {
+                  "$ref": "#/$defs/segmented_execution"
+                }
+              }
+            }
+          }
+        },
+        "conditional_scope_authorization": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/evidence"
+            },
+            {
+              "properties": {
+                "sha256": {
+                  "const": "7268574cf03549dc8aaf8c02adc3e0388946d8b12cbccf867838f963d2a1433e"
+                }
+              }
+            }
+          ]
+        }
+      }
     }
-  },
+  ],
   "$defs": {
     "evidence": {
       "type": "object",
@@ -278,9 +671,117 @@
           "minLength": 1
         }
       }
+    },
+    "segmented_execution": {
+      "type": "object",
+      "required": [
+        "phase",
+        "actual_receipt",
+        "output_inventory",
+        "output_root",
+        "primary_output",
+        "primary_output_inventory_key",
+        "application_review"
+      ],
+      "properties": {
+        "phase": {
+          "enum": [
+            "completion",
+            "completion_report"
+          ]
+        },
+        "actual_receipt": {
+          "$ref": "#/$defs/evidence"
+        },
+        "output_inventory": {
+          "$ref": "#/$defs/evidence"
+        },
+        "output_root": {
+          "type": "string"
+        },
+        "primary_output": {
+          "$ref": "#/$defs/evidence"
+        },
+        "primary_output_inventory_key": {
+          "type": "string"
+        },
+        "application_review": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/review"
+            },
+            {
+              "required": [
+                "output_inventory_sha256_path",
+                "primary_output_sha256_path"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "native_completion_report_plan_fields": {
+      "type": "object",
+      "required": [
+        "schema",
+        "completion_plan",
+        "completion_actual_receipt",
+        "completion_output_inventory",
+        "original_owner_suite_release",
+        "output_directory"
+      ],
+      "properties": {
+        "schema": {
+          "const": "TEST_STAGE_B_completion_final_report_plan_v1"
+        },
+        "completion_plan": {
+          "$ref": "#/$defs/evidence"
+        },
+        "completion_actual_receipt": {
+          "$ref": "#/$defs/evidence"
+        },
+        "completion_output_inventory": {
+          "$ref": "#/$defs/evidence"
+        },
+        "original_owner_suite_release": {
+          "$ref": "#/$defs/evidence"
+        },
+        "output_directory": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "native_segment_original_input_join": {
+      "type": "object",
+      "required": [
+        "original_input_inventory"
+      ],
+      "properties": {
+        "original_input_inventory": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "native_report_actual_input_map": {
+      "type": "object",
+      "required": [
+        "input_sha256"
+      ],
+      "properties": {
+        "input_sha256": {
+          "type": "object",
+          "minProperties": 2,
+          "maxProperties": 2,
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
     }
   },
-  "x_contract_notes": {
+  "x_once_contract_notes": {
     "authority": "SOURCE_RELATIVE_FINITE_H_UNAVAILABLE_SCOPE_AUTHORIZATION.txt exactSHA7889 + d280; original strong726c unchanged",
     "identity_recipe": "canonical SHA256(json.dumps(full per-nucleus original identities, sort_keys=True,separators=(',',':'),ensure_ascii=False,allow_nan=False)); exact original43f fixed manifest pinned; retained IDs and C queue keep original order",
     "phase_actual_receipt_fields": [
@@ -374,5 +875,19 @@
       "input_not_started": 0,
       "expected_fields": "expected_H_model_loads/expected_C_model_loads may remainNone; no actual inference from expectations; never mutate frozen receipts"
     }
+  },
+  "x_segmented_contract_notes": {
+    "scope": "Metadata implementation/synthetics only; no actual terminal/segment/report generated, and source PASS still pending.",
+    "authority": "7268574c conditional authorization, original3d4b design and108d consolidated findings; fe3a/542c/f8c/0df4 source bound before future acceptance. Original e9db once-success branch remains.",
+    "original_terminal": "Exact failed score actual schema/request suiteaed+phase7e12+owner7c1+planf527/phase-input seal/retained canonical original claim. Nonzero outer and observed integerworker/nullableinner preserved; no fabricated child inventory.",
+    "partition": "Original ordered prefix with complete saved raw/final+initial files; at most one recovered next complete result or one conservative boundary. Include *.json.tmp touched evidence; never infer unstarted from initial denominator alone. Partition independent audit binds original partial seal and unchanged eligibility/no started retry.",
+    "segment2": "Fixed canonical once claim, exact source PASS, original seal/suffix manifest,15*N+600/cleanup60/CPU1/GPU0/8GiB, unchanged10s/cap50000. Journal both read binding and execution under original deadlines. Actual terminal0+complete outputinventory+source/actual application review required. Second partial never complete; no third. Actual producer-shaped phase schema/status and sampled peakRSS/wall are checked against frozen budget plus cleanup, not only declared plan.",
+    "N0": "No segment invented. Current reviewed native producer requires positiveN and has no approved N0report path: verifier fails closed even when completion_segment=None.",
+    "report": "Single original report-phase claim; actual completion_report0+saved-file outputinventory+independent audit. Full C3637/H1371NA, original and segment exits separate. frozen9d/cdfP1 source proof, P1 domain/full-axis off metadata, no recovered margins/targetinvariance/reference. Exact native origin_counts must equal original_completed/prefix, boundary_saved_initial_unknown/boundary and completion_completed/suffix counts.",
+    "review_binding": "Application-review selector paths point to real existing reviewer fields: original terminal subject+partial/input seals; partition subject+partialseal; segment/report subject+outputinventory+primaryoutput digests. Never rewrite reviews to satisfy schema. Segment application review additionally binds started-inventory SHA; no post-audit journal substitution.",
+    "root_delta": "source_relative_completion needs execution_protocol, batch_execution_protocol_amended=true, original_single7200_complete=false. Each baseline status COMPLETE_ACCOUNTING_SEGMENTED, true original_actual_inner_exit/external_exit plus completion_actual_inner_exit/external_exit0. Strong flags allfalse; conditional authority included final exact reviewed evidence SHA closure.",
+    "unchanged": "Original fixed identities, H unavailable, original prediction1/1/1 andf848 builder, all metric-domain unsupported/off/unknown/unavailable boundaries, final publication/demo/application review requirements.",
+    "source_status": "Current native108d notPASS; an actual passing review and original terminal cannot be fabricated. No actual branch can pass now.",
+    "report_join_fix": "SEGMENT-META-P1-REPORT-JOIN: actual report receipt.input_sha256 must equal exactly selected reportplan/release path->SHA map. Reportplan.completion_output_inventory must be the same ref as the actually sealed segment outputinventory, and reportplan.output_directory must equal the sealed report root. Segmentplan.original_input_inventory must be the same ref as original_score.input_inventory (already complete original input/source seal); reportplan selects that exact segmentplan. All refs are SHA-checked; native producer fields are mandatory, no invented plan fields."
   }
 }

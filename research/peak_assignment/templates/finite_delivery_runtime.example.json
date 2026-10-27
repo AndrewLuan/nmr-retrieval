@@ -3,8 +3,8 @@
   "execution_authorized": false,
   "workspace": "/external/owner-frozen-delivery",
   "bindings": {
-    "finite_verifier.public_source_sha256": "e156460436d55dc2a7823fa93df7500003d7ba919cfa0b99312a98da3a0c1033",
-    "finite_verifier.schema_sha256": "d365c5aa23ea5d81e3ef5da8fbc03b67a2c113f6bf30d171e3e87bd944c48ec8"
+    "finite_verifier.public_source_sha256": "fc0c705448b67c5c950ca17e540a1644e9e18c8f9683e9bed0e0e29bcdc57db4",
+    "finite_verifier.schema_sha256": "80ddb82f3f2cfd23619a29d5d1ffaa2217dd4bd1d5ea2d36074cf2b499d11cfc"
   },
-  "scope": "Original once score-success finite branch only; actual authority7889 and predictionf848 pins remain in code; no conditional4 support or completion claim"
+  "scope": "Source-only original once-success and approved original partial + one completed segment metadata predicates. Actual private source/authority/receipt pins stay actual evidence in external workspace; portable sourceSHA never substituted for actual source proof. Actual delivery PENDING."
 }

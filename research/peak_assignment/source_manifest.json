@@ -1675,8 +1675,8 @@
     {
       "public_path": "research/peak_assignment/verify_source_relative_finite_delivery.py",
       "original_source_name": "verify_source_relative_delivery.py",
-      "original_source_sha256": "e9dbeb228cce38933d4f8cd0e353826b13dc290c78c6210e60269fe070474be9",
-      "public_sha256": "e156460436d55dc2a7823fa93df7500003d7ba919cfa0b99312a98da3a0c1033",
+      "original_source_sha256": "556941194d8a474f8fe697405da6b62ad622d3cbdee6fa1601ed8bf5a47d6726",
+      "public_sha256": "fc0c705448b67c5c950ca17e540a1644e9e18c8f9683e9bed0e0e29bcdc57db4",
       "changes": [
         {
           "kind": "portable finite seam",
@@ -1688,8 +1688,8 @@
     {
       "public_path": "research/peak_assignment/test_public_source_relative_finite.py",
       "original_source_name": "test_source_relative_delivery_finite.py",
-      "original_source_sha256": "869bb5f0d6b7bfe43989202ccc6a9698c9f9554d26aa310c293d9b40838b57f4",
-      "public_sha256": "514ceb56715f7738b8e249d615e5c469872c66ecd98af3488b015b2688b3d496",
+      "original_source_sha256": "89eb62f9d4bd004944e0a13fbc90bdc3d75bb4627e96221bc75a6c8878bbb742",
+      "public_sha256": "4877bab69a2858c7a0c72f40f374fed0372f803c016ce40a0db52426177a04fc",
       "changes": [
         {
           "kind": "portable finite seam",
@@ -1855,24 +1855,24 @@
     },
     {
       "path": "source_relative_delivery_finite_schema.json",
-      "sha256": "d365c5aa23ea5d81e3ef5da8fbc03b67a2c113f6bf30d171e3e87bd944c48ec8",
-      "original_source_sha256": "d365c5aa23ea5d81e3ef5da8fbc03b67a2c113f6bf30d171e3e87bd944c48ec8"
+      "sha256": "80ddb82f3f2cfd23619a29d5d1ffaa2217dd4bd1d5ea2d36074cf2b499d11cfc",
+      "original_source_sha256": "80ddb82f3f2cfd23619a29d5d1ffaa2217dd4bd1d5ea2d36074cf2b499d11cfc"
     },
     {
       "path": "finite_delivery_synthetic_checks.py",
-      "sha256": "de0483e7fc04586200be9d98fcafd9681b3e09d5bd7e417ee8b0e5c05e4f2f30"
+      "sha256": "64f27a844aae4dae489fb6a147e47d9468c1a9489e93adddf20e09740a2e750c"
     },
     {
       "path": "FINITE_DELIVERY_README.md",
-      "sha256": "1858a07cd31a02e3dfb1ac2495a7e7736f612b5f3c235225110910e3c372a45f"
+      "sha256": "efe41d2532436a9359b5af196cd778eea4b48052bd3d80579cddeb292eaae446"
     },
     {
       "path": "templates/finite_delivery_runtime.example.json",
-      "sha256": "36e1a330d977b789cf7e4eb1ed16224f41bcdc574f4bee55b351b2ae337ce6d0"
+      "sha256": "38c583dbf3753441e5d3cf8ba4e00352aa721161ffc171588fb71063b99f8523"
     },
     {
       "path": "finite_delivery_source_delta.json",
-      "sha256": "78c9f4a8bd36c4a1250b4ce60a67897100d55c138059fefdd9c1d4bc841eb9f7"
+      "sha256": "d107d928c0cad7c8251fc6e304a5e8bdc52415bd794b607f636f82f5d434b569"
     },
     {
       "path": "CONDITIONAL_COMPLETION_README.md",
