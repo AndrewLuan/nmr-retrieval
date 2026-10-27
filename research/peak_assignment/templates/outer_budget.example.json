@@ -1,0 +1,31 @@
+{
+  "schema": "portable_assignment_outer_budget_example_v1",
+  "execution_authorized": false,
+  "scoring": {
+    "CPU": 2,
+    "GPU": 0,
+    "max_workers": 1,
+    "OMP_NUM_THREADS": 1,
+    "MKL_NUM_THREADS": 1,
+    "OPENBLAS_NUM_THREADS": 1,
+    "RSS_limit_bytes": 2147483648,
+    "per_record_wall_seconds": 10,
+    "mapping_and_candidates_seconds": 2,
+    "B1_solver_seconds": 2,
+    "B2_solver_seconds": 5,
+    "result_validation_reserve_seconds": 1,
+    "diagnostics_shared_seconds": 0.25,
+    "max_candidates_per_global_problem": 50000
+  },
+  "cache": {
+    "CPU_threads": 2,
+    "GPU_devices": 0,
+    "RSS_limit_bytes": 8589934592,
+    "wall_seconds_total": "<explicit-frozen-budget>",
+    "load_seconds_per_model": "<explicit-frozen-budget>",
+    "forward_seconds_per_model": "<explicit-frozen-budget>",
+    "max_forward_started": "<explicit-frozen-budget>"
+  },
+  "retry_count": 0,
+  "test_inputs": 0
+}

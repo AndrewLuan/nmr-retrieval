@@ -1,0 +1,160 @@
+{
+  "schema": "assignment_numeric_implementation_config_v1",
+  "status": "SCIENTIFIC_CONFIG_APPROVED_IMPLEMENTATION_ACCEPTANCE_PENDING",
+  "scientific_validation_allowed": "PRE_AUTHORIZED_ONLY_AFTER_ACCEPTANCE_GATES",
+  "test_evaluation_allowed": false,
+  "proposal_sha256": "<external-exact-sha256>",
+  "proposal_parameters": {
+    "B0_B1_reference_scale_ppm": {
+      "1H": 0.3,
+      "13C": 2
+    },
+    "reference_scale_reason": "One fixed reference per nucleus keeps B0 and B1 nearest-distance ordering identical. H 0.3 ppm is an existing common H class scale; this is a declared baseline reference, not a newly estimated nucleus-wide variance.",
+    "B1_unexplained_cost": 3,
+    "B1_gates": "none; all finite singleton carrier distances considered",
+    "B2_huber_delta": 1.5,
+    "B2_unexplained_cost": 3.375,
+    "B2_member_gate_standardized_abs_residual": 3,
+    "B2_pair_span": "abs(mu_ur-mu_vs) <= 2*sqrt(s_ur^2+s_vs^2)",
+    "B2_merge_cost": 0.6931471805599453,
+    "B2_merge_cost_expression": "log(2)",
+    "ordinary_reporting_prior": {
+      "probability_reference": 0.75,
+      "relative_missing_cost": 1.0986122886681098,
+      "relative_missing_cost_expression": "log(3)",
+      "source": "predeclared finite reporting-potential prior; not estimated completeness or calibrated reporting probability"
+    },
+    "reduced_reporting_prior": {
+      "probability_reference": 0.5,
+      "relative_missing_cost": 0,
+      "activate": "Exchangeable unit identified by the frozen structure rule, OR all carrier gate intervals are outside an explicitly supplied acquisition/crop window. Never infer a window from min/max observed input."
+    },
+    "reliable_integral_weight": 0,
+    "integral_policy": "Disabled for both nuclei for the entire first round. Label counts, bin cardinality, parent H mass and printed peak heights are never treated as actual integral. A future integral likelihood requires separately frozen source semantics, normalization and noise support.",
+    "max_units_per_observation": 2,
+    "B2_pair_span_error_scale_multiplier": 2
+  },
+  "source_frozen_information": {
+    "all_baselines": "Same units, carrier centers/weights, source-independent structural metadata, identity maps and query conditions. B0/B1 intentionally ignore carrier weights in nearest distance; B2 uses them in the declared mixture cost.",
+    "H_width_source": "historical_H211_train_parent_class_width",
+    "H_width_sha256": "<external-exact-sha256>",
+    "H_widths_ppm": {
+      "aliphatic_CH3": 0.20000000298023224,
+      "aliphatic_CH2": 0.30000001192092896,
+      "aliphatic_CH": 0.4000000059604645,
+      "aromatic_CH": 0.30000001192092896,
+      "aldehyde_CH": 0.4000000059604645,
+      "NH": 1.5,
+      "OH": 1.5,
+      "SH": 0.699999988079071,
+      "other": 0.699999988079071
+    },
+    "H_binding": "h_uncertainty.node_classes(batch)[details.owners]. Preserve carrier-specific scale and whole attachment hypotheses. No source labels, observed shift or closest-gold alignment selects a class.",
+    "H_interpretation": "Existing train fitted class error scales transferred to Huber. No new fitting/blending; not linewidth, new local sigmahead, or calibrated probability.",
+    "C_width_ppm": 2,
+    "C_width_source": "fixed_error_scale_prior_no_qualified_C_residual_fit",
+    "no_new_scale_fit": true,
+    "scale_floor_ppm": {
+      "1H": 0.05,
+      "13C": 0.5
+    },
+    "scale_floor_reason": "H matches the preexisting width grid minimum. C is one quarter of its explicit 2 ppm prior. Floors are numerical reference scales, not asserted instrument resolution; selected scales exceed them and per-unit normalizer constants cancel from assignment comparisons."
+  },
+  "computation_budget": {
+    "per_record_wall_seconds": 10,
+    "scope": "Mapping projection, candidate construction, B0, B1, B2, raw-ID alternatives and requested margins; excludes separately approved model forward/cache construction.",
+    "mapping_and_candidates_seconds": 2,
+    "B1_solver_seconds": 2,
+    "B2_solver_seconds": 5,
+    "result_validation_reserve_seconds": 1,
+    "solver_time_limit": "min(per_method_allowance, remaining_record_budget minus validation reserve); always finite. Outer watchdog includes preprocessing/backend setup.",
+    "max_candidates_per_global_problem": 50000,
+    "candidate_policy": "Enumerate all candidates satisfying frozen gates. If the full count exceeds cap, return unsupported; no score-dependent top-N candidate pruning.",
+    "top_k": 3,
+    "compute_margins": true,
+    "certification": "Only optimal=True and the corresponding solver certificates authorize exact best/top_k/margin claims. A timed-out feasible incumbent may be diagnostic output with approximate status, not certified ranking or high-confidence score. no_alternative is NA, not infinity/probability 1.",
+    "ties": "Never map sorted IDs to chemical uniqueness. Equal objectives/margins retain tie state.",
+    "input_load_scope": "The 2 second preprocessing allowance includes loading the already-approved single-record frozen prediction/observation payload, identity projection and complete candidate construction. Limit serialized per-record input to 10 MiB; exceedance is unsupported_input_budget. Bulk checkpoint/prediction-cache construction is a separately authorized stage, not repeated per record.",
+    "input_bytes_limit": 10485760,
+    "one_fixed_evaluation": "Run each historical eligible record once with fixed budgets and one configuration. Best, Top3 and margins share their method allowance and the 10 second record deadline. Timeout stays in the frozen denominator, cannot publish high confidence, and does not trigger relaxed gates, larger budgets or parameter retuning."
+  },
+  "confidence_calibration": {
+    "status": "off_until_gold_eligible_validation_support_exists",
+    "score_B0": "local difference between second-best distinct-unit cost and best; tie or no alternative => no publishable positive score",
+    "score_B1_B2": "certified per-observation global objective gap after forbidding the current full unit set and re-solving; no_alternative/timeout/nonoptimal => NA. Raw-ID gauge permutations may conservatively make margin zero; do not call it quotient margin.",
+    "mapping_rule": "For per-peak exact metrics project only that observation while retaining the complete JointMapping. Whole-record/joint compatibility uses the full assignment. Require invariant output at the advertised atom/parent/group level.",
+    "threshold_axes": [
+      "baseline",
+      "nucleus",
+      "task_semantics natural_resonance vs derived_value_bin",
+      "advertised target level atom vs parent vs group",
+      "truth_basis: independently_trusted_experimental vs source_relative"
+    ],
+    "validation_partition": "Before scores/labels are inspected, split existing fixed validation connectivity groups 50:50 using first bit of sha256(\"assignment-confidence-173|\"+connectivity_id): 0 calibration, 1 audit. No new molecular cohort or test split.",
+    "threshold_candidates": "Only distinct finite positive margins in calibration; publication uses score>=threshold. Do not split tied margin blocks.",
+    "selection": "Choose threshold with largest published eligible-unit count subject to empirical exact-set precision>=0.90, >=100 published eligible units and >=30 independent connectivity groups. Tie in coverage: choose larger threshold. Gold-eligible failures/unsupported units remain in total eligible denominator for coverage.",
+    "audit": "Apply selected threshold unchanged to audit. Require empirical exact-set precision>=0.90 plus >=100 published eligible units and >=30 connectivity groups. Failure or insufficient support => high-confidence output off for that stratum; no threshold refit using audit.",
+    "cluster_CI": "Report 95% percentile bootstrap CI for exact-set precision and coverage from 2000 resamples of connectivity groups, seed173; keep all records/peaks of a sampled group together. Compute separately for calibration and held-out audit; the audit threshold stays fixed. This is not a 0.90 lower-confidence-bound guarantee.",
+    "whole_input_endpoint": "all_input_reported_peaks_exact uses one record-level outcome and score=min certified per-peak margin; independently calibrate only if same >=100 records and >=30 connectivity groups support exists. Unknown acquisition window alone is not a disqualifier.",
+    "strict_full_spectrum_endpoint": "Existing whole_molecule completeness metric remains separate and requires its complete-spectrum evidence.",
+    "no_support_behavior": "Report uncalibrated ranked outputs and exact/compatibility metrics where eligible; high-confidence published set is empty, precision NA, coverage0, calibration_status=off_insufficient_support. This is not a calibration pass.",
+    "no_cross_stratum_pooling": "Do not pool H with C, derived with natural, or parent with atom accuracy to reach support. Truth bases are also separate.",
+    "truth_basis_rule": "Never pool truth bases. For independently trusted experimental gold, the 0.90 endpoint is exact-set precision at the advertised level. For source-relative labels it is source-assertion compatibility precision against the frozen joint source assertions, not trusted experimental accuracy. The threshold/audit/support/CI procedure is otherwise identical; the metric name and truth_basis accompany every published confidence tag."
+  },
+  "top3": {
+    "raw_ID": "Solver global Top3 is allowed with certification and explicit fixed-ID label; B0 local Top3 stays separate.",
+    "quotient": "Unsupported for nontrivial legal identity permutations. Do not deduplicate only three raw solutions or advertise them as three chemical explanations.",
+    "optional_extension": "A later exact whole-class enumeration needs a certified raw prefix until three distinct projected classes or exhaustion; not part of this proposal.",
+    "fourth_raw_solve": "not_selected"
+  },
+  "truth_basis_axes_required": true,
+  "machine_cost_contract": {
+    "B0_B1_reference_scale_ppm": {
+      "1H": 0.3,
+      "13C": 2.0
+    },
+    "B2_cost_convention": "reduced_scale_normalizer",
+    "B2_gate_mode": "standardized",
+    "B2_member_gate_multiplier": 3.0,
+    "B2_pair_span_error_scale_multiplier": 2.0,
+    "B2_delta": 1.5,
+    "B2_merge_cost": 0.6931471805599453,
+    "smin_ppm": {
+      "1H": 0.05,
+      "13C": 0.5
+    },
+    "integral_policy": "disabled_both_nuclei_first_round",
+    "missing_kappa_ordinary": 1.0986122886681098,
+    "missing_kappa_reduced_reporting": 0.0,
+    "B1_unexplained": 3.0,
+    "B2_unexplained": 3.375,
+    "max_units_per_observation": 2,
+    "tie_relative_tolerance": 1e-07
+  },
+  "tie_protocol": {
+    "status": "APPROVED_BY_SCIENTIFIC_OWNER",
+    "tau_expression": "1e-7*max(1,abs(Fbest),abs(Falt))",
+    "objective": "reduced forB1/B2; normalizeddistance forB0",
+    "B0": "complete minimum tieblock; determinate only if whole block projected through complete jointmapping has one advertisedtarget; otherwise abstain retaineddenominator",
+    "Top3_boundary": "hit lower/upper bounds forcutoff tie; IDordering notchemicalaccuracy",
+    "B1_B2": "certified perobservationgap<=tau oruncertified ->conservative abstention; compatibility separate",
+    "raw_globalTop3": "diagnostic; quotient unsupported; fourthraw optionalinsamebudget elsecutoff_unverified"
+  },
+  "scientific_numerical_release": {
+    "path": "<external-manifest-path>",
+    "sha256": "<external-exact-sha256>",
+    "bytes": 1600
+  },
+  "machine_calibration_contract": {
+    "precision_threshold": 0.9,
+    "min_published_units": 100,
+    "min_connectivity_groups": 30,
+    "bootstrap_replicates": 2000,
+    "seed": 173,
+    "confidence_level": 0.95,
+    "split_namespace": "assignment-confidence-173|",
+    "threshold_values": "distinctfinitepositivescoresin calibration,score>=threshold,whole ties",
+    "threshold_tie_break": "largerthreshold for samecoverage",
+    "audit_refit": false
+  }
+}

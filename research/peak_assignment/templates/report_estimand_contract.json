@@ -1,0 +1,73 @@
+{
+  "schema": "approved_assignment_report_estimands_v1",
+  "frozen_before_any_assignment_scoring": true,
+  "comparisons": [
+    [
+      "B1",
+      "B0"
+    ],
+    [
+      "B2",
+      "B0"
+    ],
+    [
+      "B2",
+      "B1"
+    ]
+  ],
+  "paired_gain": {
+    "implementation": "nmr_assignment.metrics.paired_gain",
+    "replicates": 2000,
+    "seed": 173,
+    "confidence": 0.95,
+    "same_eligible_denominators": true,
+    "cluster": "connectivity"
+  },
+  "strata": [
+    "nucleus",
+    "role",
+    "task_semantics",
+    "target_level",
+    "truth_basis"
+  ],
+  "micro": {
+    "backend_legacy_field": "summarize.precision",
+    "report_name": "determinate_assignment_success_rate",
+    "formula": "sum(success and eligible) / sum(eligible)",
+    "unsupported_eligible": "retained denominator"
+  },
+  "conditional": {
+    "report_name": "conditional_accuracy_among_supported_outputs",
+    "formula": "sum(success and eligible and prediction_supported) / sum(eligible and prediction_supported)",
+    "report_true_denominator": true,
+    "do_not_mix_with_fixed_denominator_success": true
+  },
+  "macro": {
+    "name": "connectivity_equal_weight_macro_success_rate",
+    "steps": [
+      "Per record: mean success over eligible peaks",
+      "Per connectivity: mean of its record-level rates",
+      "Final: equal-weight mean across connectivities"
+    ],
+    "exclude_record_with_zero_eligible_from_numeric_macro": true,
+    "zero_support": "NA; disclose counts",
+    "CI": "connectivity cluster percentile bootstrap2000 seed173 95percent",
+    "report_N": [
+      "eligible_peaks",
+      "eligible_records",
+      "eligible_connectivities"
+    ]
+  },
+  "whole_endpoints_separate": [
+    "all_input_reported_peaks_exact",
+    "strict_full_spectrum"
+  ],
+  "strict_completeness_unknown": "ineligible/NA; do not claim complete spectrum exact",
+  "top3": {
+    "raw_global": "diagnostic; cutoff_unverified unless proven exhausted",
+    "chemical_quotient": "unsupported/NA; never dedup3 raw solutions to claim3 chemicalalternatives",
+    "B0_cutoff_tie": "hit lower/upper bounds"
+  },
+  "truth_scope": "Report gains only within exact source-relative/source-report-supported/trusted-experimental track.69 recovered element-schema coverage is not a model accuracy gain.",
+  "model_or_test_outputs_used": 0
+}

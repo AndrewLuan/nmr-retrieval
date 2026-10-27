@@ -1,0 +1,91 @@
+{
+  "schema": "portable_assignment_external_pipeline_v1",
+  "execution_authorized": false,
+  "inputs": {
+    "raw_source": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "identity_ledger": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "policy": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "cohort_manifest": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "reference_release": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "transport_review": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "asset_manifest": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "cache_plan": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "cache_review": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "public": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "gold": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "ledger": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "admissions": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "cache_input_ledger": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "predictions": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "lineages": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "numeric_config": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    },
+    "completed_manifest": {
+      "path": "<external-private-artifact>",
+      "sha256": "<exact-byte-sha256>"
+    }
+  },
+  "source_relative_truth_only": true,
+  "source_and_gold_hidden": true,
+  "actual_window": null,
+  "keep_original_raw_bytes": true,
+  "unavailable_inputs": "retain unknown coverage; never invent observations",
+  "reference_requirements": [
+    "complete joint graph maps plus completeness evidence",
+    "raw row SHA and policy/cohort SHA bindings",
+    "original targets/mask preserved",
+    "quality restrictions preserved",
+    "no known labels is ineligible"
+  ],
+  "validation_only_calibration": true
+}

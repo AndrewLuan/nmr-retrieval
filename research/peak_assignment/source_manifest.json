@@ -1,0 +1,963 @@
+{
+  "schema": "portable_assignment_source_inventory_v1",
+  "status": "PREPARED_NOT_SCIENTIFICALLY_RERUN",
+  "files": [
+    {
+      "public_path": "research/peak_assignment/prepare_H_reference_inputs.py",
+      "original_source_name": "prepare_H_reference_inputs.py",
+      "original_source_sha256": "69d48a5eab3e80005f5afaf8bc559f0b72fa82b8522430fbe6dc044f0f8c9bbc",
+      "public_sha256": "f4033727349b0926f7c31430eba1d49d36265cb16181c7a67aad5279e48e71b2",
+      "changes": [
+        {
+          "key": "prepare_H_reference_inputs.sha_or_identity.1",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_H_reference_inputs.sha_or_identity.2",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_H_reference_inputs.embedded_path.3",
+          "kind": "embedded_path"
+        },
+        {
+          "key": "prepare_H_reference_inputs.embedded_path.4",
+          "kind": "embedded_path"
+        },
+        {
+          "key": "prepare_H_reference_inputs.ssh_host.5",
+          "kind": "ssh_host"
+        },
+        {
+          "key": "prepare_H_reference_inputs.path.6",
+          "kind": "path"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/build_H_source_reference_batch.py",
+      "original_source_name": "build_H_source_reference_batch.py",
+      "original_source_sha256": "0b75b769fb3dd2cfbb23fa734056fd35d8392ea8f82f301df6d2951da0a65338",
+      "public_sha256": "92a39a264bbe05f1496e6d7753a386c7577d15b49ea3eca5d8b26479dbd039b3",
+      "changes": [
+        {
+          "key": "build_H_source_reference_batch.sha_or_identity.1",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "build_H_source_reference_batch.sha_or_identity.2",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "build_H_source_reference_batch.sha_or_identity.3",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "build_H_source_reference_batch.cohort_count.4",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "build_H_source_reference_batch.cohort_count.5",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "build_H_source_reference_batch.cohort_count.6",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "build_H_source_reference_batch.cohort_count.7",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "build_H_source_reference_batch.ssh_host.8",
+          "kind": "ssh_host"
+        },
+        {
+          "key": "build_H_source_reference_batch.path.9",
+          "kind": "path"
+        },
+        {
+          "key": "build_H_source_reference_batch.ssh_host.10",
+          "kind": "ssh_host"
+        },
+        {
+          "key": "build_H_source_reference_batch.sha_or_identity.11",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "build_H_source_reference_batch.path.12",
+          "kind": "path"
+        },
+        {
+          "key": "build_H_source_reference_batch.ssh_host.13",
+          "kind": "ssh_host"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/prepare_C_reference_inputs.py",
+      "original_source_name": "prepare_C_reference_inputs.py",
+      "original_source_sha256": "722e84974b16fc8c674b99caa88b6d3a178f753d02dc7d797eed3a95265207e3",
+      "public_sha256": "e18da5ecbc315d68bff4ee7cb14116154b153310d8f1d5fed7cd148d886f69b1",
+      "changes": [
+        {
+          "key": "prepare_C_reference_inputs.sha_or_identity.1",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_C_reference_inputs.sha_or_identity.2",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_C_reference_inputs.sha_or_identity.3",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_C_reference_inputs.sha_or_identity.4",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_C_reference_inputs.embedded_path.5",
+          "kind": "embedded_path"
+        },
+        {
+          "key": "prepare_C_reference_inputs.embedded_path.6",
+          "kind": "embedded_path"
+        },
+        {
+          "key": "prepare_C_reference_inputs.embedded_path.7",
+          "kind": "embedded_path"
+        },
+        {
+          "key": "prepare_C_reference_inputs.embedded_path.8",
+          "kind": "embedded_path"
+        },
+        {
+          "key": "prepare_C_reference_inputs.ssh_host.9",
+          "kind": "ssh_host"
+        },
+        {
+          "key": "prepare_C_reference_inputs.path.10",
+          "kind": "path"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/C_reference_rule_producer.py",
+      "original_source_name": "C_reference_rule_producer.py",
+      "original_source_sha256": "e70b28b531fc1acc2ca44c2b47774d05437455b55f6ed9e18aca2407060c5e2b",
+      "public_sha256": "c7865313a189b042797cca549cd6458909c7a3ceac6d16a2bc38ef6eaf416c9f",
+      "changes": [
+        {
+          "key": "C_reference_rule_producer.sha_or_identity.1",
+          "kind": "sha_or_identity"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/build_C_reference_batch.py",
+      "original_source_name": "build_C_reference_batch.py",
+      "original_source_sha256": "962ab81a25a4fed3415a96d35c0a5c086597c0de860ec03559bb09823379927c",
+      "public_sha256": "25090e4054e2c7c6f1b15760d5adb15ee45eb7b761f47608a1d9df5ac747d58d",
+      "changes": [
+        {
+          "key": "build_C_reference_batch.sha_or_identity.1",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "build_C_reference_batch.sha_or_identity.2",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "build_C_reference_batch.sha_or_identity.3",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "build_C_reference_batch.sha_or_identity.4",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "build_C_reference_batch.sha_or_identity.5",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "build_C_reference_batch.sha_or_identity.6",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "build_C_reference_batch.cohort_count.7",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "build_C_reference_batch.path.8",
+          "kind": "path"
+        },
+        {
+          "key": "build_C_reference_batch.path.9",
+          "kind": "path"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/test_C_reference_rule_producer.py",
+      "original_source_name": "test_C_reference_rule_producer.py",
+      "original_source_sha256": "aebbdf86d0671d93ec2e9d019e0d5675d9c8e3cd67987522fe224854d7e6b540",
+      "public_sha256": "77c570f51d4288754afaf44e5c77bfa04e0baa40577527a6a51b7d72c7532191",
+      "changes": [],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/build_frozen_prediction_cache.py",
+      "original_source_name": "build_frozen_prediction_cache.py",
+      "original_source_sha256": "5f5bd2ff1ebad7bbb1e6cf3c73391708fb3be18b93f4c76c5f3f7ba1d9abd177",
+      "public_sha256": "ccd75d490641c9cdaad4d1f54aa7498e5a925cdea1f88efb825bd14aec69e52e",
+      "changes": [
+        {
+          "key": "build_frozen_prediction_cache.sha_or_identity.1",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "build_frozen_prediction_cache.sha_or_identity.2",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "build_frozen_prediction_cache.sha_or_identity.3",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "build_frozen_prediction_cache.sha_or_identity.4",
+          "kind": "sha_or_identity"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/verify_H_frozen_cache_artifacts.py",
+      "original_source_name": "verify_H_frozen_cache_artifacts.py",
+      "original_source_sha256": "baa8e412eb5f48cbd0bdd31b17770ccc50aa96f9f20e9f01a1e96c075a3906d6",
+      "public_sha256": "ae0261e29d6a062ea7adf4be1f0bd9bfbc9d4f39633518c6bfd39a4a383b14ca",
+      "changes": [
+        {
+          "key": "verify_H_frozen_cache_artifacts.sha_or_identity.1",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.sha_or_identity.2",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.3",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.4",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.5",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.6",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.7",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.8",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.9",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.10",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.11",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.12",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.13",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.14",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.15",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.16",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.additional_71",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.additional_71",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.additional_71",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_H_frozen_cache_artifacts.cohort_count.additional_71",
+          "kind": "cohort_count"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/verify_C_frozen_cache_artifacts.py",
+      "original_source_name": "verify_C_frozen_cache_artifacts.py",
+      "original_source_sha256": "f20297276fb8673025a65044438a55937a7daffdb6a0935a4b13d422d0f49e78",
+      "public_sha256": "3456a2c6d1945dc10de3648c2f15cdb18bfdb06a7fa366f88da25d3b794860e0",
+      "changes": [
+        {
+          "key": "verify_C_frozen_cache_artifacts.cohort_count.1",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_C_frozen_cache_artifacts.cohort_count.2",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_C_frozen_cache_artifacts.sha_or_identity.3",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "verify_C_frozen_cache_artifacts.cohort_count.4",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "verify_C_frozen_cache_artifacts.expected_count.3219",
+          "kind": "expected_count"
+        },
+        {
+          "key": "verify_C_frozen_cache_artifacts.expected_count.3219",
+          "kind": "expected_count"
+        },
+        {
+          "key": "verify_C_frozen_cache_artifacts.expected_count.3219",
+          "kind": "expected_count"
+        },
+        {
+          "key": "verify_C_frozen_cache_artifacts.embedded_sha_identity.1",
+          "kind": "embedded_sha_identity"
+        },
+        {
+          "key": "verify_C_frozen_cache_artifacts.expected_count.3219",
+          "kind": "expected_count"
+        },
+        {
+          "key": "verify_C_frozen_cache_artifacts.expected_count.520",
+          "kind": "expected_count"
+        },
+        {
+          "key": "verify_C_frozen_cache_artifacts.embedded_sha_identity.2",
+          "kind": "embedded_sha_identity"
+        },
+        {
+          "key": "verify_C_frozen_cache_artifacts.expected_count.3219",
+          "kind": "expected_count"
+        },
+        {
+          "key": "verify_C_frozen_cache_artifacts.expected_count.3219",
+          "kind": "expected_count"
+        },
+        {
+          "key": "verify_C_frozen_cache_artifacts.expected_count.3219",
+          "kind": "expected_count"
+        },
+        {
+          "key": "verify_C_frozen_cache_artifacts.expected_count.3219",
+          "kind": "expected_count"
+        },
+        {
+          "key": "verify_C_frozen_cache_artifacts.expected_count.520",
+          "kind": "expected_count"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/H_frozen_cache_remote_supervisor.py",
+      "original_source_name": "H_frozen_cache_remote_supervisor.py",
+      "original_source_sha256": "0d09badbd7e558bb721925e9e4cc574d64ff5d2b0717e57a88d2ed61412f5a8e",
+      "public_sha256": "3792e2ab081fa9322370ef47eab343b9dbf3405a5f794d72cd848584e7c26f43",
+      "changes": [
+        {
+          "key": "H_frozen_cache_remote_supervisor.cohort_count.1",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "H_frozen_cache_remote_supervisor.cohort_count.2",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "H_frozen_cache_remote_supervisor.cohort_count.3",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "H_frozen_cache_remote_supervisor.cohort_count.4",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "H_frozen_cache_remote_supervisor.cohort_count.5",
+          "kind": "cohort_count"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/C_frozen_cache_remote_supervisor.py",
+      "original_source_name": "C_frozen_cache_remote_supervisor.py",
+      "original_source_sha256": "7e9804a26f326fadf6b6ad308e6f3fadb5540f4ca3bf2b06d009107bef3afccb",
+      "public_sha256": "b9c705af4091157f1c0d981a704003e3e1136be557b839b6b6f04ff2f49b7e99",
+      "changes": [
+        {
+          "key": "C_frozen_cache_remote_supervisor.cohort_count.1",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "C_frozen_cache_remote_supervisor.cohort_count.2",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "C_frozen_cache_remote_supervisor.cohort_count.3",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "C_frozen_cache_remote_supervisor.cohort_count.4",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "C_frozen_cache_remote_supervisor.cohort_count.5",
+          "kind": "cohort_count"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/prepare_H_scoring_artifacts.py",
+      "original_source_name": "prepare_H_scoring_artifacts.py",
+      "original_source_sha256": "c935962745641f7ba6f96e278328deec488241c74b1d3d50f5a5b159e8f793e4",
+      "public_sha256": "56172f8337ecd534d6572f558a999133557292cc292ceecc91a619efcb557848",
+      "changes": [
+        {
+          "key": "prepare_H_scoring_artifacts.sha_or_identity.1",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.sha_or_identity.2",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.sha_or_identity.3",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.sha_or_identity.4",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.sha_or_identity.5",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.sha_or_identity.6",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.sha_or_identity.7",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.sha_or_identity.8",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.cohort_count.9",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.cohort_count.10",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.cohort_count.11",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.cohort_count.12",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.cohort_count.13",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.cohort_count.14",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.cohort_count.15",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.cohort_count.16",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.cohort_count.17",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.cohort_count.18",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.cohort_count.19",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_H_scoring_artifacts.cohort_count.20",
+          "kind": "cohort_count"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/prepare_C_scoring_artifacts.py",
+      "original_source_name": "prepare_C_scoring_artifacts.py",
+      "original_source_sha256": "2e9fba34bee82b70d953858c3b3a65137d57bb677c1068134a05631cda2ed232",
+      "public_sha256": "7c3560851202efc1a4b464d2636795aec138eec20a2fa0250089880ad4644c1a",
+      "changes": [
+        {
+          "key": "prepare_C_scoring_artifacts.sha_or_identity.1",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.sha_or_identity.2",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.sha_or_identity.3",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.sha_or_identity.4",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.sha_or_identity.5",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.sha_or_identity.6",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.cohort_count.7",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.cohort_count.8",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.cohort_count.9",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.cohort_count.10",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.cohort_count.11",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.cohort_count.12",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.cohort_count.13",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.cohort_count.14",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.cohort_count.15",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.cohort_count.16",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.cohort_count.17",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.cohort_count.additional_5",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.cohort_count.additional_5",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.cohort_count.additional_5",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.cohort_count.additional_5",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "prepare_C_scoring_artifacts.cohort_count.additional_5",
+          "kind": "cohort_count"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/assignment_evaluation_adapter.py",
+      "original_source_name": "assignment_evaluation_adapter.py",
+      "original_source_sha256": "525f0332853e8ec92e16cb2bf90cc5be3611d29fc75b76a312a3540413dcafe3",
+      "public_sha256": "878fde0e7d13f000b487c00b5ef4f3e737b0b16f26596f1a624009c91be3d171",
+      "changes": [
+        {
+          "kind": "repository discovery only"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/run_frozen_assignment_baselines.py",
+      "original_source_name": "run_frozen_assignment_baselines.py",
+      "original_source_sha256": "eae3552a3e98c22966b7e73880ec3d0a1bc5dd961b4a2fb965a098071f5a84d2",
+      "public_sha256": "7a3c18953c10bcf1e9f80cea531137fb113ce2f194948b7c8ada8f421732d4be",
+      "changes": [
+        {
+          "key": "run_frozen_assignment_baselines.sha_or_identity.1",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "run_frozen_assignment_baselines.sha_or_identity.2",
+          "kind": "sha_or_identity"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/run_frozen_C_assignment_baselines.py",
+      "original_source_name": "run_frozen_C_assignment_baselines.py",
+      "original_source_sha256": "53f3a9caf0301c9f6882578366c131f5f7842bf06feacbf1b3b28e6674ebb591",
+      "public_sha256": "ff1ea1b086c4a3ce511de3c5339783c27526067f197a887e9f312965e855a021",
+      "changes": [
+        {
+          "key": "run_frozen_C_assignment_baselines.sha_or_identity.1",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "run_frozen_C_assignment_baselines.sha_or_identity.2",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "run_frozen_C_assignment_baselines.cohort_count.3",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "run_frozen_C_assignment_baselines.cohort_count.4",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "run_frozen_C_assignment_baselines.cohort_count.5",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "run_frozen_C_assignment_baselines.cohort_count.6",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "run_frozen_C_assignment_baselines.cohort_count.7",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "run_frozen_C_assignment_baselines.cohort_count.additional_5",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "run_frozen_C_assignment_baselines.cohort_count.additional_5",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "run_frozen_C_assignment_baselines.cohort_count.additional_5",
+          "kind": "cohort_count"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/frozen_report_estimators.py",
+      "original_source_name": "frozen_report_estimators.py",
+      "original_source_sha256": "9d002586d9b47db528ef50ae8a82e4eeb44e2721ef9f5ee7cb76e2661b561084",
+      "public_sha256": "4bfe758c66c80a9d8184eb3c0bf7bbdb49259abb0cd12a734ee298f5aa1a8a98",
+      "changes": [
+        {
+          "kind": "repository discovery only"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/summarize_frozen_assignment_outputs.py",
+      "original_source_name": "summarize_frozen_assignment_outputs.py",
+      "original_source_sha256": "7329c9138fbfd00d16b03a6acea5bc300494a37ff26ac1c1a68b0e410d7ca0bc",
+      "public_sha256": "e66b5268abf4f739c97e354ba2484457d482eb60ae3df8ffff8f2250b6fde7c1",
+      "changes": [
+        {
+          "key": "summarize_frozen_assignment_outputs.sha_or_identity.1",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "summarize_frozen_assignment_outputs.sha_or_identity.2",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "summarize_frozen_assignment_outputs.cohort_count.3",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_assignment_outputs.cohort_count.4",
+          "kind": "cohort_count"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/summarize_frozen_C_assignment_outputs.py",
+      "original_source_name": "summarize_frozen_C_assignment_outputs.py",
+      "original_source_sha256": "7fb7f506507cc4d5d92298f278fff740b806deb19647ffa1823e02ed3e11ceff",
+      "public_sha256": "115b1c1b9a1103d9f1fe6a3c5fecd9270ea5a6387e1b1fdf1e5a73e577659924",
+      "changes": [
+        {
+          "key": "summarize_frozen_C_assignment_outputs.sha_or_identity.1",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.sha_or_identity.2",
+          "kind": "sha_or_identity"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.3",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.4",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.5",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.6",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.7",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.8",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.9",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.10",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.11",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.12",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.13",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.14",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.15",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.16",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.17",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.18",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.19",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.20",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.21",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.22",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.additional_5",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.additional_36",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.additional_36",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.additional_5",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.additional_5",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.additional_5",
+          "kind": "cohort_count"
+        },
+        {
+          "key": "summarize_frozen_C_assignment_outputs.cohort_count.additional_5",
+          "kind": "cohort_count"
+        },
+        {
+          "kind": "schema seam delta",
+          "detail": "cache_gate consumes top-level packaged_manifest, matching frozen caller plan schema; no algorithm change"
+        },
+        {
+          "kind": "coverage metadata multiplicity guard",
+          "detail": "check list length, unique IDs and independent full identity domain before dict conversion; public count reuses original-ledger frozen-length gate"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/verify_assignment_complete.py",
+      "original_source_name": "verify_assignment_complete.py",
+      "original_source_sha256": "726c9b52145085fdca441f32043a575444d8503b8e5a106cd82e1ce72e85c62d",
+      "public_sha256": "e979c57e1cf290c3eac2b6ab84fbe7a3c06aa0fa89b29bee0cb1007875a40454",
+      "changes": [
+        {
+          "kind": "external artifact root delta",
+          "detail": "ROOT=workspace(); artifact reads use artifact_path; original scientific completion predicates unchanged"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/verify_source_relative_delivery.py",
+      "original_source_name": "verify_source_relative_delivery.py",
+      "original_source_sha256": "1450ea6984c5ca4ba485b5eea12f681b2d94684320b98d699df7d14e506c8c28",
+      "public_sha256": "e7704e6dad7bdd4f6c85b4bc539377b2002675bbfbf6dda9a1bd564a3fb3ef45",
+      "changes": [
+        {
+          "kind": "external artifact root delta",
+          "detail": "ROOT=workspace(); artifact reads use artifact_path; original scientific completion predicates unchanged"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    }
+  ],
+  "excluded_once_launchers": [
+    "execute_H_trainval_once.py",
+    "execute_C_val_once.py"
+  ],
+  "external_dependencies": [
+    "nmr_assignment",
+    "nmr_transfer"
+  ],
+  "execution_authorized_default": false,
+  "support_files": [
+    {
+      "path": "README.md",
+      "sha256": "e1379a2216d4a9e5011c77c6f0aa2300b9b04082e91942149f968c562830801c"
+    },
+    {
+      "path": "portable_runtime.py",
+      "sha256": "64046c1192993bce138d878f3edb396a5ec479b7d6a2ee76aa638dcdf0f6d9cc"
+    },
+    {
+      "path": "synthetic_checks.py",
+      "sha256": "6838e55427ab0a7106a7472323dcc11d6a54c35906328431188a5c1f43e05a2e"
+    },
+    {
+      "path": "templates/numerical_implementation_config.json",
+      "sha256": "78eeb17327677fcd8af1adaaab24717854416d2f5d5467d04a049d110cd030fb"
+    },
+    {
+      "path": "templates/outer_budget.example.json",
+      "sha256": "f2a47d2b3a3a72258073dce2258bbf284617bfd74d825124369a680f3973601c"
+    },
+    {
+      "path": "templates/pipeline_inputs.example.json",
+      "sha256": "0a7a283db5ce34cb2692601d8bbf2a7af404345b2b66b2fd1390af909b7ee3f8"
+    },
+    {
+      "path": "templates/report_estimand_contract.json",
+      "sha256": "e332e16f6189cb7f7a044b4e1e7c39cd5f095efbc02d96a0d1a4bf3cafcfb8c9"
+    },
+    {
+      "path": "templates/runtime_manifest.example.json",
+      "sha256": "cc77fdf977cacb7efece6b954bf7d9c6532365cba396bb71915e1ede81c092e7"
+    }
+  ]
+}
