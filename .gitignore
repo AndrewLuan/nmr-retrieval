@@ -55,4 +55,9 @@ research/peak_assignment/**/*.json
 !research/peak_assignment/templates/H_resume_runtime_bindings.example.json
 !research/peak_assignment/templates/Stage_B_runtime_bindings.example.json
 !research/peak_assignment/templates/complete_runtime_manifest.example.json
+!research/peak_assignment/source_relative_delivery_finite_schema.json
+!research/peak_assignment/finite_delivery_source_delta.json
+!research/peak_assignment/templates/finite_delivery_runtime.example.json
+!research/peak_assignment/conditional_completion_source_delta.json
+!research/peak_assignment/templates/conditional_completion_runtime_bindings.example.json
 research/peak_assignment/**/EXIT_CODE

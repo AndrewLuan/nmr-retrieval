@@ -1,0 +1,10 @@
+{
+  "schema": "portable_assignment_runtime_v1",
+  "execution_authorized": false,
+  "workspace": "/external/owner-frozen-delivery",
+  "bindings": {
+    "finite_verifier.public_source_sha256": "e156460436d55dc2a7823fa93df7500003d7ba919cfa0b99312a98da3a0c1033",
+    "finite_verifier.schema_sha256": "d365c5aa23ea5d81e3ef5da8fbc03b67a2c113f6bf30d171e3e87bd944c48ec8"
+  },
+  "scope": "Original once score-success finite branch only; actual authority7889 and predictionf848 pins remain in code; no conditional4 support or completion claim"
+}

@@ -74,7 +74,7 @@ def main():
         finally:sys.argv=old;runtime._CONFIG=None
     import subprocess
     additive=[]
-    for name in ('H_resume_synthetic_checks.py','H_parent_A_synthetic_checks.py','Stage_B_synthetic_checks.py'):
+    for name in ('H_resume_synthetic_checks.py','H_parent_A_synthetic_checks.py','Stage_B_synthetic_checks.py','finite_delivery_synthetic_checks.py','conditional_completion_synthetic_checks.py'):
         run=subprocess.run([sys.executable,'-B',str(ROOT/name)],capture_output=True,text=True)
         assert run.returncode==0,(name,run.stdout,run.stderr)
         additive.append(dict(script=name,actual_exit=run.returncode,stdout=run.stdout))

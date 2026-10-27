@@ -1,0 +1,378 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Finite source-relative test metadata; no actual completion generated",
+  "type": "object",
+  "required": [
+    "schema",
+    "scope_acceptance_sha256",
+    "fixed_identity_manifest",
+    "H_fixed_test",
+    "C_native_test"
+  ],
+  "not": {
+    "required": [
+      "fixed_test_passes"
+    ]
+  },
+  "properties": {
+    "schema": {
+      "const": "source_relative_fixed_test_H_unavailable_C_complete_v1"
+    },
+    "scope_acceptance_sha256": {
+      "const": "7889f813ced7fbe525ed7c3bd1a787a62c31d34008b53813492ddc1cae5253bb"
+    },
+    "fixed_identity_manifest": {
+      "$ref": "#/$defs/evidence"
+    },
+    "H_fixed_test": {
+      "type": "object",
+      "required": [
+        "original_identity_count",
+        "historical_identity_counts",
+        "identity_order_sha256",
+        "retained_ids",
+        "H_fixed_test_scoring_runs",
+        "H_fixed_test_model_calls",
+        "H_fixed_test_assignment_complete",
+        "assignment_metrics",
+        "status",
+        "replacement_observations",
+        "A_actual",
+        "A_application_review",
+        "unevaluable_retained_not_replaced"
+      ],
+      "properties": {
+        "original_identity_count": {
+          "const": 1371
+        },
+        "historical_identity_counts": {
+          "const": {
+            "observed": 1000,
+            "frequency_crop": 200,
+            "peak_dropout": 171
+          }
+        },
+        "identity_order_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "retained_ids": {
+          "type": "array",
+          "minItems": 1371,
+          "maxItems": 1371,
+          "uniqueItems": true
+        },
+        "H_fixed_test_scoring_runs": {
+          "const": 0
+        },
+        "H_fixed_test_model_calls": {
+          "const": 0
+        },
+        "H_fixed_test_assignment_complete": {
+          "const": false
+        },
+        "assignment_metrics": {
+          "type": "null"
+        },
+        "status": {
+          "const": "unavailable"
+        },
+        "replacement_observations": {
+          "const": false
+        },
+        "A_actual": {
+          "$ref": "#/$defs/evidence"
+        },
+        "A_application_review": {
+          "$ref": "#/$defs/review"
+        },
+        "unevaluable_retained_not_replaced": {
+          "const": true
+        }
+      }
+    },
+    "C_native_test": {
+      "type": "object",
+      "required": [
+        "original_identity_count",
+        "scorequeue",
+        "source_unknown",
+        "prediction_available",
+        "prediction_failed_retained",
+        "actual_prediction_runs",
+        "actual_package_runs",
+        "actual_scoring_runs",
+        "actual_report_runs",
+        "identity_order_sha256",
+        "retained_ids",
+        "scorequeue_ids",
+        "unevaluable_retained_not_replaced",
+        "cache_failed_eligible_retained",
+        "freeze_before_evaluation_verified",
+        "suite_manifest",
+        "owner_release",
+        "phases"
+      ],
+      "properties": {
+        "original_identity_count": {
+          "const": 3637
+        },
+        "scorequeue": {
+          "const": 3636
+        },
+        "source_unknown": {
+          "const": 1
+        },
+        "prediction_available": {
+          "const": 3635
+        },
+        "prediction_failed_retained": {
+          "const": 1
+        },
+        "actual_prediction_runs": {
+          "const": 1
+        },
+        "actual_package_runs": {
+          "const": 1
+        },
+        "actual_scoring_runs": {
+          "const": 1
+        },
+        "actual_report_runs": {
+          "const": 1
+        },
+        "identity_order_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "retained_ids": {
+          "type": "array",
+          "minItems": 3637,
+          "maxItems": 3637,
+          "uniqueItems": true
+        },
+        "scorequeue_ids": {
+          "type": "array",
+          "minItems": 3636,
+          "maxItems": 3636,
+          "uniqueItems": true
+        },
+        "unevaluable_retained_not_replaced": {
+          "const": true
+        },
+        "cache_failed_eligible_retained": {
+          "const": true
+        },
+        "freeze_before_evaluation_verified": {
+          "const": true
+        },
+        "suite_manifest": {
+          "$ref": "#/$defs/evidence"
+        },
+        "owner_release": {
+          "$ref": "#/$defs/evidence"
+        },
+        "phases": {
+          "type": "object",
+          "required": [
+            "prediction",
+            "package",
+            "score",
+            "report"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "prediction": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/phase"
+                },
+                {
+                  "required": [
+                    "prediction_receipt",
+                    "prediction_receipt_inventory_key"
+                  ]
+                }
+              ]
+            },
+            "package": {
+              "$ref": "#/$defs/phase"
+            },
+            "score": {
+              "$ref": "#/$defs/phase"
+            },
+            "report": {
+              "$ref": "#/$defs/phase"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "artifact",
+        "subject_sha256_path"
+      ],
+      "properties": {
+        "artifact": {
+          "$ref": "#/$defs/evidence"
+        },
+        "subject_sha256_path": {
+          "type": "array",
+          "items": {
+            "type": [
+              "string",
+              "integer"
+            ]
+          }
+        }
+      }
+    },
+    "phase": {
+      "type": "object",
+      "required": [
+        "actual_receipt",
+        "primary_output",
+        "primary_output_inventory_key",
+        "application_review"
+      ],
+      "properties": {
+        "actual_receipt": {
+          "$ref": "#/$defs/evidence"
+        },
+        "primary_output": {
+          "$ref": "#/$defs/evidence"
+        },
+        "primary_output_inventory_key": {
+          "type": "string",
+          "minLength": 1
+        },
+        "application_review": {
+          "$ref": "#/$defs/review"
+        },
+        "prediction_receipt": {
+          "$ref": "#/$defs/evidence"
+        },
+        "prediction_receipt_inventory_key": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  },
+  "x_contract_notes": {
+    "authority": "SOURCE_RELATIVE_FINITE_H_UNAVAILABLE_SCOPE_AUTHORIZATION.txt exactSHA7889 + d280; original strong726c unchanged",
+    "identity_recipe": "canonical SHA256(json.dumps(full per-nucleus original identities, sort_keys=True,separators=(',',':'),ensure_ascii=False,allow_nan=False)); exact original43f fixed manifest pinned; retained IDs and C queue keep original order",
+    "phase_actual_receipt_fields": [
+      "phase",
+      "actual_inner_exit",
+      "actual_worker_exit",
+      "actual_outer_exit",
+      "input_hashes_unchanged",
+      "leader_reaped",
+      "owned_survivors",
+      "child_output_inventory",
+      "once_claim"
+    ],
+    "phase_exits": {
+      "prediction": [
+        1,
+        1,
+        1
+      ],
+      "package": [
+        0,
+        0,
+        0
+      ],
+      "score": [
+        0,
+        0,
+        0
+      ],
+      "report": [
+        0,
+        0,
+        0
+      ]
+    },
+    "proofs": "No phase success from wrapper flags alone: receipt+actual file hashes+inventory primary-output binding+persistent once claim linked suite/release+PASS review subject SHA. subject_sha256_path selects existing review subject digest; never rewrite actual reviews. All referenced primary output JSON must exist; do not read spectrum/prediction JSONL as primary.",
+    "non_science": "Control schema only; root fills actual outputs after complete application audits. A actual models/scores0 refers only to extraction stage; H_fixed_test_model_calls0 never means all H trainval model calls0.",
+    "metric_coverage": {
+      "field": "stratified_metrics.json.metric_domain_coverage",
+      "each_item_required": [
+        "status",
+        "scope",
+        "evidence"
+      ],
+      "statuses": [
+        "supported",
+        "off",
+        "unknown",
+        "unsupported",
+        "unavailable"
+      ],
+      "required_supported": [
+        "per_peak_exact",
+        "whole_reported_input",
+        "micro",
+        "macro",
+        "conditional",
+        "paired",
+        "stratified"
+      ],
+      "required_off": [
+        "high_confidence"
+      ],
+      "required_unavailable": [
+        "H_fixed_test_assignment"
+      ],
+      "required_uncompleted": [
+        "chemical_quotient_top3",
+        "natural_overlap",
+        "strict_full_spectrum",
+        "systematic_stress"
+      ],
+      "original_goal_unfinished_domains_also": [
+        "trusted_experimental",
+        "H_fixed_test_assignment"
+      ],
+      "forbidden": "required_metric_families_complete, even true; no blanket original-goal completion"
+    },
+    "final_closure": "done.evidence_sha256 covers all deliverables except done/final-review self-cycles, plus both authority files; every digest checked; final independent review reviewed_evidence_sha256 exactly equals closure. Existing root verifier contracts for baseline/calibration/publication/report/demonstration remain.",
+    "no_completion_assertion": true,
+    "actual_prediction_proof": {
+      "receipt_sha256": "f848167644298829bfa021ef02beba83900d3bf28bf764b630ba88cebab7b0d0",
+      "source": "builder receipt.json, mandatory separate SHA+actual prediction-output-inventory binding; primary cache manifest alone is insufficient",
+      "model_loads": {
+        "13C": 1,
+        "1H": "absent or exact integer0"
+      },
+      "input_count": 3636,
+      "input_success": 3635,
+      "input_failed": 1,
+      "input_not_started": 0,
+      "expected_fields": "expected_H_model_loads/expected_C_model_loads may remainNone; no actual inference from expectations; never mutate frozen receipts"
+    }
+  }
+}

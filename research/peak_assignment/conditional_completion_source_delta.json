@@ -1,0 +1,77 @@
+{
+  "schema": "conditional4_portable_source_delta_v1",
+  "status": "SOURCE_ONLY_PENDING_INDEPENDENT_PORTABILITY_REVIEW",
+  "original_transport_review_sha256": "1d9286af3a12640b6b2da52e71644c0f7724fe865f00c5714f2529f55780a138",
+  "original_contract_delta_sha256": "b49717d6da441b9857ea8472ed8450039d98d6ff19e121adc8d503989daa324e",
+  "finite_inherited_public_review_sha256": "18ebb23c8821dc5e628d239e9ef45159093a73c9d5db744b0f0c435f540d500e",
+  "files": [
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_completion.py",
+      "original_source_name": "TEST_STAGE_B_completion.py",
+      "original_source_sha256": "fe3a0a6c350016cce0ad3d5cbb74287caf42563c0b718b1e1f6a1a9269777c88",
+      "public_sha256": "815a1e48b37c791c228b4e263a824f88a50de5268f357d03d578b074f06c0e95",
+      "changes": [
+        {
+          "kind": "portable explicit control bindings",
+          "detail": "authorize and four-source closure perhelper; exact path-sensitive metadata and public inherited sources explicit bindings; same runtime tochild; started hook lexical format only"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_completion_supervisor.py",
+      "original_source_name": "TEST_STAGE_B_completion_supervisor.py",
+      "original_source_sha256": "f8c84850c4f250c319d5bdc948012da1f81aa4796c040c15c90b357b8a989a13",
+      "public_sha256": "adcbe1bd5182cd23c8fa43187989032452e2b5e0cc4b151859644fb783689e5d",
+      "changes": [
+        {
+          "kind": "portable explicit control bindings",
+          "detail": "authorize and four-source closure perhelper; exact path-sensitive metadata and public inherited sources explicit bindings; same runtime tochild; started hook lexical format only"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_completion_report.py",
+      "original_source_name": "TEST_STAGE_B_completion_report.py",
+      "original_source_sha256": "542c2808791410d6ecbeaa0507ff3507125fb98ee83be883fdc968a684dc69d1",
+      "public_sha256": "e800a0cfce988b73264cea37fb709b28a11aafb4814138833537e2ad3960521f",
+      "changes": [
+        {
+          "kind": "portable explicit control bindings",
+          "detail": "authorize and four-source closure perhelper; exact path-sensitive metadata and public inherited sources explicit bindings; same runtime tochild; started hook lexical format only"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_completion_tests.py",
+      "original_source_name": "TEST_STAGE_B_completion_tests.py",
+      "original_source_sha256": "0df4d1779335e98ff61fb97afa93577fcbebd32c93e410ba37f8e57e57d449e1",
+      "public_sha256": "df39e04dc8e809394fafd709dd9e907c9ea95d7ebd22d01fa61f501be05f128e",
+      "changes": [
+        {
+          "kind": "portable explicit control bindings",
+          "detail": "authorize and four-source closure perhelper; exact path-sensitive metadata and public inherited sources explicit bindings; same runtime tochild; started hook lexical format only"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    }
+  ],
+  "actual_acceptance": false,
+  "segmented_finite_migrated": false,
+  "support_files": [
+    {
+      "path": "CONDITIONAL_COMPLETION_README.md",
+      "sha256": "7cf0413d499fc4840afa6bb67fc3dfeb73fb75e9906c165dd0b9ac6420cf6927"
+    },
+    {
+      "path": "conditional_completion_synthetic_checks.py",
+      "sha256": "4e7f10d397d0f1e778be8d5bb8faa3b6accb16256543f0ff5235390acecfb639"
+    },
+    {
+      "path": "templates/conditional_completion_runtime_bindings.example.json",
+      "sha256": "fa45c8fc2a4c283898c5a529f69dc6076204b22f919d8860230a1768dd693bcf"
+    }
+  ]
+}

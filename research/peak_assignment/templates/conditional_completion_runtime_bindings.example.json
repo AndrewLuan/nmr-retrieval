@@ -1,0 +1,28 @@
+{
+  "schema": "portable_assignment_runtime_v1",
+  "execution_authorized": false,
+  "workspace": "/external/owner-frozen-segment-control",
+  "bindings": {
+    "conditional_completion.original_suite_sha256": "aed363b9438186765745f4f568f71ba183904dc4b3f2c60ccef8c7831f79baf7",
+    "conditional_completion.original_scoring_plan_sha256": "f5270fc73c400d9a112273c02ef6ae5c1f209d8614886c700a0388681f69f74e",
+    "conditional_completion.original_owner_release_sha256": "7c1cf21c46fb852b7e3cb430bab6f52b4e6babe211372ac223cb14b573150d82",
+    "conditional_completion.original_score_phase_sha256": "7e12a1fc4ced86c6749b8937eb2903b2cb09aa6ef318576a15eab210068d96b7",
+    "conditional_completion.public_caller_sha256": "7146184e1152d5cb6359db748266af5294f807383b25164b7efe8f9d627bc321",
+    "conditional_completion.public_supervisor_sha256": "a8d99bae316f566a3926e263f65a8bef293589ce2fa76909bfee0e51ed11108d",
+    "conditional_completion.public_report_sha256": "91bcd57ffbbbffd423590e03be4fdac3f7307537083ee8e71b053c01b7cb720e",
+    "conditional_completion.public_source_sha256": {
+      "TEST_STAGE_B_completion.py": "815a1e48b37c791c228b4e263a824f88a50de5268f357d03d578b074f06c0e95",
+      "TEST_STAGE_B_completion_supervisor.py": "adcbe1bd5182cd23c8fa43187989032452e2b5e0cc4b151859644fb783689e5d",
+      "TEST_STAGE_B_completion_report.py": "e800a0cfce988b73264cea37fb709b28a11aafb4814138833537e2ad3960521f",
+      "TEST_STAGE_B_completion_tests.py": "df39e04dc8e809394fafd709dd9e907c9ea95d7ebd22d01fa61f501be05f128e"
+    }
+  },
+  "original_actual_metadata_pins": {
+    "original_suite_sha256": "aed363b9438186765745f4f568f71ba183904dc4b3f2c60ccef8c7831f79baf7",
+    "original_scoring_plan_sha256": "f5270fc73c400d9a112273c02ef6ae5c1f209d8614886c700a0388681f69f74e",
+    "original_owner_release_sha256": "7c1cf21c46fb852b7e3cb430bab6f52b4e6babe211372ac223cb14b573150d82",
+    "original_score_phase_sha256": "7e12a1fc4ced86c6749b8937eb2903b2cb09aa6ef318576a15eab210068d96b7"
+  },
+  "scope": "Source-only parameterization. Original actual metadata SHAs shown for provenance; relocated metadata requires separately frozen exact bindings and public migration review, never claim original actual SHA for new bytes. No completion or segmented finite acceptance.",
+  "public_source_binding_targets": {}
+}
