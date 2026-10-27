@@ -72,5 +72,11 @@ def main():
             except ValueError:pass
             else:raise AssertionError('default authorization admitted')
         finally:sys.argv=old;runtime._CONFIG=None
-    print(json.dumps(dict(status='PUBLIC_SYNTHETIC_INTERFACE_PASS',source_files=len(inventory['files']),adapter=adapter,estimator=estimator,real_rows_read=0,model_loads=0,real_batch_solves=0)))
+    import subprocess
+    additive=[]
+    for name in ('H_resume_synthetic_checks.py','H_parent_A_synthetic_checks.py','Stage_B_synthetic_checks.py'):
+        run=subprocess.run([sys.executable,'-B',str(ROOT/name)],capture_output=True,text=True)
+        assert run.returncode==0,(name,run.stdout,run.stderr)
+        additive.append(dict(script=name,actual_exit=run.returncode,stdout=run.stdout))
+    print(json.dumps(dict(status='PUBLIC_SYNTHETIC_INTERFACE_PASS',source_files=len(inventory['files']),additive=additive,adapter=adapter,estimator=estimator,real_rows_read=0,model_loads=0,real_batch_solves=0)))
 if __name__=='__main__':main()

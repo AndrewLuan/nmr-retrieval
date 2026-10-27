@@ -1,0 +1,21 @@
+{
+  "schema": "public_assignment_JSON_allowlist_v1",
+  "allowed_source_JSON": [
+    "H_parent_A_source_delta.json",
+    "H_resume_source_delta.json",
+    "PUBLIC_SOURCE_JSON_ALLOWLIST.json",
+    "Stage_B_source_delta.json",
+    "source_manifest.json",
+    "templates/H_parent_A_runtime_bindings.example.json",
+    "templates/H_resume_runtime_bindings.example.json",
+    "templates/Stage_B_runtime_bindings.example.json",
+    "templates/complete_runtime_manifest.example.json",
+    "templates/numerical_implementation_config.json",
+    "templates/outer_budget.example.json",
+    "templates/pipeline_inputs.example.json",
+    "templates/report_estimand_contract.json",
+    "templates/runtime_manifest.example.json"
+  ],
+  "private_runtime_or_actual_results_allowed": false,
+  "root_ignore_rule_action": "Add exact negations only for listed source metadata/templates; retain blanket private artifact exclusions"
+}

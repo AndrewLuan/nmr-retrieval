@@ -1,0 +1,154 @@
+{
+  "schema": "portable_H_resume_source_preparation_v1",
+  "status": "DRAFT_PUBLIC_DELTA_PENDING_RELOCATION_REVIEW",
+  "files": [
+    {
+      "public_path": "research/peak_assignment/resume_frozen_H_postprocessing_batch.py",
+      "original_source_name": "resume_frozen_H_postprocessing_batch.py",
+      "original_source_sha256": "48615e61a74e3727dacee15169afec7275896958ea74ae08463b12bc9fae143c",
+      "public_sha256": "46e29504d0d2481b0c8bad6171e109c1be7ccf5993cce349d929e1f9e5e4fd7f",
+      "changes": [
+        {
+          "key": "resume_frozen_H_postprocessing_batch.exact_source_or_evidence_sha256.1",
+          "kind": "exact_source_or_evidence_sha256"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.exact_source_or_evidence_sha256.2",
+          "kind": "exact_source_or_evidence_sha256"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.3",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.4",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.5",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.6",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.7",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.8",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.9",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.exact_source_or_evidence_sha256.10",
+          "kind": "exact_source_or_evidence_sha256"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.11",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.12",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.13",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.14",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.15",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.16",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.17",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.18",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.19",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.20",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.21",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "kind": "explicit direct-import closure",
+          "detail": "six authorized I/O control primitives, no original supervisor runtime dependency"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/supervise_frozen_H_postprocessing_resume.py",
+      "original_source_name": "supervise_frozen_H_postprocessing_resume.py",
+      "original_source_sha256": "8a466eb4c0b766c5de1cbf60abf61ea8dc3441a29e929d2eaab0a7ae7b060966",
+      "public_sha256": "6cec54bce21023901648363dbbf2521abbe5d3437c415e555ae6eb79a974fe87",
+      "changes": [
+        {
+          "kind": "explicit direct-import closure",
+          "detail": "six authorized I/O control primitives, no original supervisor runtime dependency"
+        },
+        {
+          "kind": "child runtime manifest propagation",
+          "detail": "pass exact runtime-manifest path/SHA to public child; require explicit args before child start"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/postprocessing_control_primitives.py",
+      "original_source_name": "supervise_frozen_postprocessing.py",
+      "original_source_sha256": "9f8d90c8e6d97ac84246a80f192321a7b9b701cdffadf04bcc0367ace70a5070",
+      "public_sha256": "8046816e0a9d56adba8a0dfbe1ca4c23116aa06c637559f5afc63f2c318159e9",
+      "changes": [
+        {
+          "kind": "subset extraction",
+          "detail": "need/sha/bound/read_bound/save_new/stamp only; add strict authorization before I/O"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    }
+  ],
+  "existing21_and_runtime_unchanged": true,
+  "external_source_dependencies": [
+    "original frozen H driver and single-record helper require independent explicit source-manifest binding; not provided as data/code by this delta"
+  ],
+  "execution_authorized_default": false,
+  "support_files": [
+    {
+      "path": "H_resume_synthetic_checks.py",
+      "sha256": "83123731f4ac297c729c0bc69715d324a55af387a5a97cfa3dd94ce0916922c9"
+    },
+    {
+      "path": "H_RESUME_README.md",
+      "sha256": "ae42d85c9722e875613397c81db0a32201647de8ed89db04188f029ea191746f"
+    },
+    {
+      "path": "templates/H_resume_runtime_bindings.example.json",
+      "sha256": "2dedd2970862630a55c7bdee52669663fe4db63b323ef3086fe29dd66882c4ab"
+    }
+  ],
+  "existing_inventory_sha256": "e741bd27fb3b4ca25fee28b024d625d6409247722c80c0b79eebe1b98c78ec42",
+  "existing_runtime_sha256": "64046c1192993bce138d878f3edb396a5ec479b7d6a2ee76aa638dcdf0f6d9cc"
+}

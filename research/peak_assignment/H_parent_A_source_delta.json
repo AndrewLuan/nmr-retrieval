@@ -1,0 +1,221 @@
+{
+  "schema": "public_H_parent_diagnostics_A_source_delta_v1",
+  "status": "PREPARED_PENDING_COMBINED_RELOCATION_REVIEW",
+  "files": [
+    {
+      "public_path": "research/peak_assignment/frozen_reference_postprocessor.py",
+      "original_source_name": "frozen_reference_postprocessor.py",
+      "original_source_sha256": "26322a3a3b98e46e6e3b4fdef5ebbaaf262a5ab8053939fc9266ef63a6a6fc0c",
+      "public_sha256": "f12a42f5e74b773c6f139ce2c7b807e08b0baa6f61a6072052a1e17d04571ec4",
+      "changes": [
+        {
+          "key": "frozen_reference_postprocessor.exact_SHA_or_identity.1",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "frozen_reference_postprocessor.exact_SHA_or_identity.2",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "frozen_reference_postprocessor.exact_SHA_or_identity.3",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "frozen_reference_postprocessor.exact_SHA_or_identity.4",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "frozen_reference_postprocessor.exact_SHA_or_identity.5",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "frozen_reference_postprocessor.exact_SHA_or_identity.6",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "kind": "authorization and dependency seam",
+          "detail": "strict runtime before CLI; no scientific body algorithm changes"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/run_frozen_H_postprocessing_batch.py",
+      "original_source_name": "run_frozen_H_postprocessing_batch.py",
+      "original_source_sha256": "f1e4345af9ac348024557218358a842dabfe04d1d263d928e1a6c9743ce7818a",
+      "public_sha256": "6c1d7068cf3667190d9a7f31f01e4e199487a8c04111866ecc7ababa03f4d311",
+      "changes": [
+        {
+          "key": "run_frozen_H_postprocessing_batch.identity_count.1",
+          "kind": "identity_count"
+        },
+        {
+          "key": "run_frozen_H_postprocessing_batch.identity_count.2",
+          "kind": "identity_count"
+        },
+        {
+          "key": "run_frozen_H_postprocessing_batch.identity_count.3",
+          "kind": "identity_count"
+        },
+        {
+          "kind": "authorization and dependency seam",
+          "detail": "strict runtime before CLI; no scientific body algorithm changes"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/supervise_frozen_postprocessing.py",
+      "original_source_name": "supervise_frozen_postprocessing.py",
+      "original_source_sha256": "9f8d90c8e6d97ac84246a80f192321a7b9b701cdffadf04bcc0367ace70a5070",
+      "public_sha256": "dad37a2b40621ce395327f621be27de036f1d73d1623a80c71a879d3b86f7c6f",
+      "changes": [
+        {
+          "key": "supervise_frozen_postprocessing.identity_count.1",
+          "kind": "identity_count"
+        },
+        {
+          "key": "supervise_frozen_postprocessing.identity_count.2",
+          "kind": "identity_count"
+        },
+        {
+          "kind": "authorization and dependency seam",
+          "detail": "strict runtime before main/file-I/O; original H supervisor reuses six authorized control primitives and propagates exact runtime args to child"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/summarize_frozen_diagnostics.py",
+      "original_source_name": "summarize_frozen_diagnostics.py",
+      "original_source_sha256": "4c68ba3aa7b6b4400b01d52611c6804251a9ed68d0e6300fa32b1dc8228c9d91",
+      "public_sha256": "54e635769e6e383ffd6acfd40dd80baf6873ad8c0a7eca66f47486bf18ab5c03",
+      "changes": [
+        {
+          "kind": "authorization and dependency seam",
+          "detail": "strict runtime before CLI; no scientific body algorithm changes"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_A_fixed_test_outer.py",
+      "original_source_name": "TEST_STAGE_A_fixed_test_outer.py",
+      "original_source_sha256": "949ec2109bbf35001b429703804ffc0de1e9120131f409e9cfc0ab597d97058c",
+      "public_sha256": "05c28c8ad0b8a4d693330e6c462f1c4ced1545254d3bb2fcbfc788f18254ed28",
+      "changes": [
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.1",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.2",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.3",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.4",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.exact_SHA_or_identity.5",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.6",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.7",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.8",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.9",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.10",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.11",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.12",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.13",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.14",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.15",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.16",
+          "kind": "identity_count"
+        },
+        {
+          "kind": "authorization and dependency seam",
+          "detail": "strict runtime before CLI; no scientific body algorithm changes"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_A_C_reference_rule_producer.py",
+      "original_source_name": "TEST_STAGE_A_C_reference_rule_producer.py",
+      "original_source_sha256": "ffc852f91f050a011cf7cde14e2f21d6c626d407083a6acc4d240dbfb571dc91",
+      "public_sha256": "08ae3b0e8e8c4e4549dc671e15a3688f60d16bd9315867caa9fef0adddd44275",
+      "changes": [
+        {
+          "key": "TEST_STAGE_A_C_reference_rule_producer.exact_SHA_or_identity.1",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_A_C_reference_rule_producer.identity_count.2",
+          "kind": "identity_count"
+        },
+        {
+          "kind": "authorization and dependency seam",
+          "detail": "strict runtime before CLI; no scientific body algorithm changes"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    }
+  ],
+  "existing21_and_H7_unchanged": true,
+  "existing_runtime_sha256": "64046c1192993bce138d878f3edb396a5ec479b7d6a2ee76aa638dcdf0f6d9cc",
+  "existing_main_inventory_sha256": "e741bd27fb3b4ca25fee28b024d625d6409247722c80c0b79eebe1b98c78ec42",
+  "H_resume_delta_sha256": "679716a9a1cac64508e0f7ef43daae2e30c64468f0468325ae9538518adf0f2c",
+  "StageB_not_included": true,
+  "source_assets_external_only": true,
+  "execution_authorized_default": false,
+  "support_files": [
+    {
+      "path": "H_parent_A_synthetic_checks.py",
+      "sha256": "f7fe6a82704b286fbf476b8f8b9e475ded1a669b2863feb8702c54fe02582b70"
+    },
+    {
+      "path": "H_PARENT_A_README.md",
+      "sha256": "18b15bef8dcd323a9e06f5758c0f9b453fb5504d0d20dc3bbfbcff1452aa39d2"
+    },
+    {
+      "path": "templates/H_parent_A_runtime_bindings.example.json",
+      "sha256": "dcb62a283421de136961b13e63e6d2aa791301d5a9956eecdc2ecae9a9d52337"
+    }
+  ]
+}

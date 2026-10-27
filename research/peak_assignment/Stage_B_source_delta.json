@@ -1,0 +1,484 @@
+{
+  "schema": "public_Stage_B_source_delta_v1",
+  "status": "PREPARED_PENDING_PUBLIC_RELOCATION_REVIEW",
+  "actual_deployment_handoff_sha256": "4c59060c03853c26d935a9549a189a4df5929c4b187910547873d086f8bdc3df",
+  "actual_source_map14": {
+    "TEST_STAGE_B_execution_contract.py": "0449125f559fb864e7176091c61cb5424ceee1ce90bef125f066672dfb541868",
+    "TEST_STAGE_B_phase_supervisor.py": "2e6bda750dcfaddafd8b93014eaccb6892fcdec4f69b45b1f81e50b6e1165445",
+    "TEST_STAGE_B_report.py": "cdf69f2238bcb9bb5ba3b367afb4d8b2a5d5ec87129d14851134c5fc61b6cd47",
+    "TEST_STAGE_B_execution_tests.py": "72a26758cce983e41eee3961cb48d132b83efae714cdb1f5454317b2a830fc1b",
+    "TEST_STAGE_B_control.py": "999a8285a8272a1bf28c3f214a38008cc7f84ba778f04ec33d4447583f1e4d0c",
+    "TEST_STAGE_B_package.py": "6edb833500cafac947889c825df98b274e0d21c8218481184647c3803fe1314a",
+    "TEST_STAGE_B_C_caller.py": "5485ec5aea29d395ca2a2b1686e86bc720b6c851843cfc249c838cf7659d9751",
+    "build_frozen_prediction_cache.py": "5f5bd2ff1ebad7bbb1e6cf3c73391708fb3be18b93f4c76c5f3f7ba1d9abd177",
+    "frozen_report_estimators.py": "9d002586d9b47db528ef50ae8a82e4eeb44e2721ef9f5ee7cb76e2661b561084",
+    "run_frozen_C_assignment_baselines.py": "53f3a9caf0301c9f6882578366c131f5f7842bf06feacbf1b3b28e6674ebb591",
+    "prepare_C_scoring_artifacts.py": "2e9fba34bee82b70d953858c3b3a65137d57bb677c1068134a05631cda2ed232",
+    "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.py": "6abe96b181ce01356699dfb017504dc858f6cdc2cdd2e132a6674626f5f0bf23",
+    "TEST_STAGE_B_CAL_RULE_IO_regression.py": "b6eb1dd20d741188289022d501617ed09c93b2c1a694834b2d414c6a9be7f8a6",
+    "TEST_STAGE_B_REPORT_P1_regression.py": "4e8506c4fcfb3786fffec1d389f1ad7c62b36dcad2142f5404002ea7dc78bd07"
+  },
+  "existing_four_runtime_sources": [
+    "build_frozen_prediction_cache.py",
+    "frozen_report_estimators.py",
+    "run_frozen_C_assignment_baselines.py",
+    "prepare_C_scoring_artifacts.py"
+  ],
+  "files": [
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_execution_contract.py",
+      "original_source_name": "TEST_STAGE_B_execution_contract.py",
+      "original_source_sha256": "0449125f559fb864e7176091c61cb5424ceee1ce90bef125f066672dfb541868",
+      "public_sha256": "ddccbb9ee016855b3308eab058bc1f04ff6146819872c05f00057c2042e38331",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.1",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.2",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.3",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.4",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.5",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.6",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.7",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.8",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.9",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.10",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.11",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.12",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.13",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.14",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.15",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.16",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.17",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.18",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.19",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.20",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.21",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.22",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_phase_supervisor.py",
+      "original_source_name": "TEST_STAGE_B_phase_supervisor.py",
+      "original_source_sha256": "2e6bda750dcfaddafd8b93014eaccb6892fcdec4f69b45b1f81e50b6e1165445",
+      "public_sha256": "a8d99bae316f566a3926e263f65a8bef293589ce2fa76909bfee0e51ed11108d",
+      "changes": [
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_report.py",
+      "original_source_name": "TEST_STAGE_B_report.py",
+      "original_source_sha256": "cdf69f2238bcb9bb5ba3b367afb4d8b2a5d5ec87129d14851134c5fc61b6cd47",
+      "public_sha256": "91bcd57ffbbbffd423590e03be4fdac3f7307537083ee8e71b053c01b7cb720e",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_report.frozen_identity_count.1",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_report.frozen_identity_count.2",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_report.frozen_identity_count.3",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_report.frozen_identity_count.4",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_report.frozen_identity_count.5",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_execution_tests.py",
+      "original_source_name": "TEST_STAGE_B_execution_tests.py",
+      "original_source_sha256": "72a26758cce983e41eee3961cb48d132b83efae714cdb1f5454317b2a830fc1b",
+      "public_sha256": "bebdc0fc75eec96db213427aad6d1ed3f24c7cdc67c9385e8920a000da4e3efa",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_execution_tests.frozen_identity_count.1",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_tests.frozen_identity_count.2",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_tests.frozen_identity_count.3",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_tests.frozen_identity_count.4",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_tests.frozen_identity_count.5",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_control.py",
+      "original_source_name": "TEST_STAGE_B_control.py",
+      "original_source_sha256": "999a8285a8272a1bf28c3f214a38008cc7f84ba778f04ec33d4447583f1e4d0c",
+      "public_sha256": "d0f68efb4e97af2b7ff9a8133ea333b80961790d47c6f62580546624cf66e3e9",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_control.frozen_identity_count.1",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_control.exact_SHA_or_identity.2",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_control.exact_SHA_or_identity.3",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_control.exact_SHA_or_identity.4",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_control.exact_SHA_or_identity.5",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_control.frozen_identity_count.6",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_control.frozen_identity_count.7",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_control.frozen_identity_count.8",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_control.frozen_identity_count.9",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_control.exact_SHA_or_identity.10",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_control.frozen_identity_count.11",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_package.py",
+      "original_source_name": "TEST_STAGE_B_package.py",
+      "original_source_sha256": "6edb833500cafac947889c825df98b274e0d21c8218481184647c3803fe1314a",
+      "public_sha256": "c4a4ca7d840e837cfccc6d754221eab5b4ca5829cbba84bc9d5950728454e5cc",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_package.frozen_identity_count.1",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_package.frozen_identity_count.2",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_package.frozen_identity_count.3",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_C_caller.py",
+      "original_source_name": "TEST_STAGE_B_C_caller.py",
+      "original_source_sha256": "5485ec5aea29d395ca2a2b1686e86bc720b6c851843cfc249c838cf7659d9751",
+      "public_sha256": "7146184e1152d5cb6359db748266af5294f807383b25164b7efe8f9d627bc321",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_C_caller.frozen_identity_count.1",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_C_caller.exact_SHA_or_identity.2",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_C_caller.frozen_identity_count.3",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_C_caller.frozen_identity_count.4",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_C_caller.frozen_identity_count.5",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_C_caller.frozen_identity_count.6",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_C_caller.frozen_identity_count.7",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.py",
+      "original_source_name": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.py",
+      "original_source_sha256": "6abe96b181ce01356699dfb017504dc858f6cdc2cdd2e132a6674626f5f0bf23",
+      "public_sha256": "ae0027ee24f64e6fd9eaea5433568bee4df0bcd2cfabae9db1ff114abfb8e334",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.frozen_identity_count.1",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.frozen_identity_count.2",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.frozen_identity_count.3",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.frozen_identity_count.4",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.frozen_identity_count.5",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.frozen_identity_count.6",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.frozen_identity_count.7",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.frozen_identity_count.8",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.exact_SHA_or_identity.9",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_CAL_RULE_IO_regression.py",
+      "original_source_name": "TEST_STAGE_B_CAL_RULE_IO_regression.py",
+      "original_source_sha256": "b6eb1dd20d741188289022d501617ed09c93b2c1a694834b2d414c6a9be7f8a6",
+      "public_sha256": "3c40a645bb40f59450d0bcd497f6b63bfe09bae2d029097209f4a94e7bfb86cb",
+      "changes": [
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_REPORT_P1_regression.py",
+      "original_source_name": "TEST_STAGE_B_REPORT_P1_regression.py",
+      "original_source_sha256": "4e8506c4fcfb3786fffec1d389f1ad7c62b36dcad2142f5404002ea7dc78bd07",
+      "public_sha256": "55bc2d0fd2a09aa7a5a9a29f087341bd15b94c1dc823ac53b8c62c2e39a36111",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_REPORT_P1_regression.frozen_identity_count.1",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_REPORT_P1_regression.frozen_identity_count.2",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_tests.py",
+      "original_source_name": "TEST_STAGE_B_tests.py",
+      "original_source_sha256": "66b269c5c72af77a8c66e68ae2a8824a12be82905e4b9885efbad40706e21531",
+      "public_sha256": "67749eca582a5cf3ef2330ff35ccb4d39829dcd8ec97bfea4cf88227e01f9327",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.1",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.2",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.3",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.4",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.5",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.6",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.7",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.8",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.9",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    }
+  ],
+  "support_files": [
+    {
+      "path": "portable_stage_runtime.py",
+      "sha256": "c7f1409af5e4573a5355239e63386968710d4a64786aa4c0b080c84de9a8693c"
+    },
+    {
+      "path": "Stage_B_synthetic_checks.py",
+      "sha256": "2b0e9b9d1a0ec4bd4ad5d8a590208dea92698ef58ce7c9c02ff4d3c961fa34e0"
+    },
+    {
+      "path": "STAGE_B_README.md",
+      "sha256": "ff53fc11f5ecca0d33b71bbdb4b4d5872d0fa8a0b25f99f20ba23d0a65ddeee0"
+    },
+    {
+      "path": "templates/Stage_B_runtime_bindings.example.json",
+      "sha256": "497e9106ebfcec27c437325c8cf1413c96ee482b1cee3dc510345daa2a0565b3"
+    }
+  ],
+  "runtime_unchanged": true,
+  "execution_authorized_default": false
+}

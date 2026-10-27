@@ -41,3 +41,5 @@ jobs:
         run: python -B -m pytest -q tests/assignment/test_admission.py tests/assignment/test_render.py
       - name: Check public outer-source interfaces
         run: python -B research/peak_assignment/synthetic_checks.py
+      - name: Check public runtime relocation guards
+        run: python -B research/peak_assignment/synthetic_checks.py --relocation-only

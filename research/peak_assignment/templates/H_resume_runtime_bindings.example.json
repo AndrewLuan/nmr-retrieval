@@ -1,0 +1,28 @@
+{
+  "schema": "portable_assignment_runtime_v1",
+  "execution_authorized": false,
+  "workspace": "./private-artifacts",
+  "bindings": {
+    "resume_frozen_H_postprocessing_batch.exact_source_or_evidence_sha256.1": "<external-exact-source-or-evidence-sha256>",
+    "resume_frozen_H_postprocessing_batch.exact_source_or_evidence_sha256.2": "<external-exact-source-or-evidence-sha256>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.3": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.4": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.5": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.6": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.7": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.8": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.9": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.exact_source_or_evidence_sha256.10": "<external-exact-source-or-evidence-sha256>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.11": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.12": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.13": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.14": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.15": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.16": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.17": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.18": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.19": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.20": "<external-exact-count>",
+    "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.21": "<external-exact-count>"
+  }
+}

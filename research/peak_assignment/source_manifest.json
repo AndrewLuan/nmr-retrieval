@@ -1,6 +1,6 @@
 {
-  "schema": "portable_assignment_source_inventory_v1",
-  "status": "PREPARED_NOT_SCIENTIFICALLY_RERUN",
+  "schema": "portable_assignment_source_inventory_v2",
+  "status": "COMPLETE_SOURCE_PREPARATION_PENDING_COMBINED_RELOCATION_REVIEW",
   "files": [
     {
       "public_path": "research/peak_assignment/prepare_H_reference_inputs.py",
@@ -915,6 +915,762 @@
         }
       ],
       "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/resume_frozen_H_postprocessing_batch.py",
+      "original_source_name": "resume_frozen_H_postprocessing_batch.py",
+      "original_source_sha256": "48615e61a74e3727dacee15169afec7275896958ea74ae08463b12bc9fae143c",
+      "public_sha256": "46e29504d0d2481b0c8bad6171e109c1be7ccf5993cce349d929e1f9e5e4fd7f",
+      "changes": [
+        {
+          "key": "resume_frozen_H_postprocessing_batch.exact_source_or_evidence_sha256.1",
+          "kind": "exact_source_or_evidence_sha256"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.exact_source_or_evidence_sha256.2",
+          "kind": "exact_source_or_evidence_sha256"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.3",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.4",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.5",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.6",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.7",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.8",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.9",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.exact_source_or_evidence_sha256.10",
+          "kind": "exact_source_or_evidence_sha256"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.11",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.12",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.13",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.14",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.15",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.16",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.17",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.18",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.19",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.20",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "key": "resume_frozen_H_postprocessing_batch.frozen_identity_or_prefix_count.21",
+          "kind": "frozen_identity_or_prefix_count"
+        },
+        {
+          "kind": "explicit direct-import closure",
+          "detail": "six authorized I/O control primitives, no original supervisor runtime dependency"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/supervise_frozen_H_postprocessing_resume.py",
+      "original_source_name": "supervise_frozen_H_postprocessing_resume.py",
+      "original_source_sha256": "8a466eb4c0b766c5de1cbf60abf61ea8dc3441a29e929d2eaab0a7ae7b060966",
+      "public_sha256": "6cec54bce21023901648363dbbf2521abbe5d3437c415e555ae6eb79a974fe87",
+      "changes": [
+        {
+          "kind": "explicit direct-import closure",
+          "detail": "six authorized I/O control primitives, no original supervisor runtime dependency"
+        },
+        {
+          "kind": "child runtime manifest propagation",
+          "detail": "pass exact runtime-manifest path/SHA to public child; require explicit args before child start"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/postprocessing_control_primitives.py",
+      "original_source_name": "supervise_frozen_postprocessing.py",
+      "original_source_sha256": "9f8d90c8e6d97ac84246a80f192321a7b9b701cdffadf04bcc0367ace70a5070",
+      "public_sha256": "8046816e0a9d56adba8a0dfbe1ca4c23116aa06c637559f5afc63f2c318159e9",
+      "changes": [
+        {
+          "kind": "subset extraction",
+          "detail": "need/sha/bound/read_bound/save_new/stamp only; add strict authorization before I/O"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/frozen_reference_postprocessor.py",
+      "original_source_name": "frozen_reference_postprocessor.py",
+      "original_source_sha256": "26322a3a3b98e46e6e3b4fdef5ebbaaf262a5ab8053939fc9266ef63a6a6fc0c",
+      "public_sha256": "f12a42f5e74b773c6f139ce2c7b807e08b0baa6f61a6072052a1e17d04571ec4",
+      "changes": [
+        {
+          "key": "frozen_reference_postprocessor.exact_SHA_or_identity.1",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "frozen_reference_postprocessor.exact_SHA_or_identity.2",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "frozen_reference_postprocessor.exact_SHA_or_identity.3",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "frozen_reference_postprocessor.exact_SHA_or_identity.4",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "frozen_reference_postprocessor.exact_SHA_or_identity.5",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "frozen_reference_postprocessor.exact_SHA_or_identity.6",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "kind": "authorization and dependency seam",
+          "detail": "strict runtime before CLI; no scientific body algorithm changes"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/run_frozen_H_postprocessing_batch.py",
+      "original_source_name": "run_frozen_H_postprocessing_batch.py",
+      "original_source_sha256": "f1e4345af9ac348024557218358a842dabfe04d1d263d928e1a6c9743ce7818a",
+      "public_sha256": "6c1d7068cf3667190d9a7f31f01e4e199487a8c04111866ecc7ababa03f4d311",
+      "changes": [
+        {
+          "key": "run_frozen_H_postprocessing_batch.identity_count.1",
+          "kind": "identity_count"
+        },
+        {
+          "key": "run_frozen_H_postprocessing_batch.identity_count.2",
+          "kind": "identity_count"
+        },
+        {
+          "key": "run_frozen_H_postprocessing_batch.identity_count.3",
+          "kind": "identity_count"
+        },
+        {
+          "kind": "authorization and dependency seam",
+          "detail": "strict runtime before CLI; no scientific body algorithm changes"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/supervise_frozen_postprocessing.py",
+      "original_source_name": "supervise_frozen_postprocessing.py",
+      "original_source_sha256": "9f8d90c8e6d97ac84246a80f192321a7b9b701cdffadf04bcc0367ace70a5070",
+      "public_sha256": "dad37a2b40621ce395327f621be27de036f1d73d1623a80c71a879d3b86f7c6f",
+      "changes": [
+        {
+          "key": "supervise_frozen_postprocessing.identity_count.1",
+          "kind": "identity_count"
+        },
+        {
+          "key": "supervise_frozen_postprocessing.identity_count.2",
+          "kind": "identity_count"
+        },
+        {
+          "kind": "authorization and dependency seam",
+          "detail": "strict runtime before main/file-I/O; original H supervisor reuses six authorized control primitives and propagates exact runtime args to child"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/summarize_frozen_diagnostics.py",
+      "original_source_name": "summarize_frozen_diagnostics.py",
+      "original_source_sha256": "4c68ba3aa7b6b4400b01d52611c6804251a9ed68d0e6300fa32b1dc8228c9d91",
+      "public_sha256": "54e635769e6e383ffd6acfd40dd80baf6873ad8c0a7eca66f47486bf18ab5c03",
+      "changes": [
+        {
+          "kind": "authorization and dependency seam",
+          "detail": "strict runtime before CLI; no scientific body algorithm changes"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_A_fixed_test_outer.py",
+      "original_source_name": "TEST_STAGE_A_fixed_test_outer.py",
+      "original_source_sha256": "949ec2109bbf35001b429703804ffc0de1e9120131f409e9cfc0ab597d97058c",
+      "public_sha256": "05c28c8ad0b8a4d693330e6c462f1c4ced1545254d3bb2fcbfc788f18254ed28",
+      "changes": [
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.1",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.2",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.3",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.4",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.exact_SHA_or_identity.5",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.6",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.7",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.8",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.9",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.10",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.11",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.12",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.13",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.14",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.15",
+          "kind": "identity_count"
+        },
+        {
+          "key": "TEST_STAGE_A_fixed_test_outer.identity_count.16",
+          "kind": "identity_count"
+        },
+        {
+          "kind": "authorization and dependency seam",
+          "detail": "strict runtime before CLI; no scientific body algorithm changes"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_A_C_reference_rule_producer.py",
+      "original_source_name": "TEST_STAGE_A_C_reference_rule_producer.py",
+      "original_source_sha256": "ffc852f91f050a011cf7cde14e2f21d6c626d407083a6acc4d240dbfb571dc91",
+      "public_sha256": "08ae3b0e8e8c4e4549dc671e15a3688f60d16bd9315867caa9fef0adddd44275",
+      "changes": [
+        {
+          "key": "TEST_STAGE_A_C_reference_rule_producer.exact_SHA_or_identity.1",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_A_C_reference_rule_producer.identity_count.2",
+          "kind": "identity_count"
+        },
+        {
+          "kind": "authorization and dependency seam",
+          "detail": "strict runtime before CLI; no scientific body algorithm changes"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_execution_contract.py",
+      "original_source_name": "TEST_STAGE_B_execution_contract.py",
+      "original_source_sha256": "0449125f559fb864e7176091c61cb5424ceee1ce90bef125f066672dfb541868",
+      "public_sha256": "ddccbb9ee016855b3308eab058bc1f04ff6146819872c05f00057c2042e38331",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.1",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.2",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.3",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.4",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.5",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.6",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.7",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.8",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.9",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.10",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.11",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.exact_SHA_or_identity.12",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.13",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.14",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.15",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.16",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.17",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.18",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.19",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.20",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.21",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_contract.frozen_identity_count.22",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_phase_supervisor.py",
+      "original_source_name": "TEST_STAGE_B_phase_supervisor.py",
+      "original_source_sha256": "2e6bda750dcfaddafd8b93014eaccb6892fcdec4f69b45b1f81e50b6e1165445",
+      "public_sha256": "a8d99bae316f566a3926e263f65a8bef293589ce2fa76909bfee0e51ed11108d",
+      "changes": [
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_report.py",
+      "original_source_name": "TEST_STAGE_B_report.py",
+      "original_source_sha256": "cdf69f2238bcb9bb5ba3b367afb4d8b2a5d5ec87129d14851134c5fc61b6cd47",
+      "public_sha256": "91bcd57ffbbbffd423590e03be4fdac3f7307537083ee8e71b053c01b7cb720e",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_report.frozen_identity_count.1",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_report.frozen_identity_count.2",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_report.frozen_identity_count.3",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_report.frozen_identity_count.4",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_report.frozen_identity_count.5",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_execution_tests.py",
+      "original_source_name": "TEST_STAGE_B_execution_tests.py",
+      "original_source_sha256": "72a26758cce983e41eee3961cb48d132b83efae714cdb1f5454317b2a830fc1b",
+      "public_sha256": "bebdc0fc75eec96db213427aad6d1ed3f24c7cdc67c9385e8920a000da4e3efa",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_execution_tests.frozen_identity_count.1",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_tests.frozen_identity_count.2",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_tests.frozen_identity_count.3",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_tests.frozen_identity_count.4",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_execution_tests.frozen_identity_count.5",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_control.py",
+      "original_source_name": "TEST_STAGE_B_control.py",
+      "original_source_sha256": "999a8285a8272a1bf28c3f214a38008cc7f84ba778f04ec33d4447583f1e4d0c",
+      "public_sha256": "d0f68efb4e97af2b7ff9a8133ea333b80961790d47c6f62580546624cf66e3e9",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_control.frozen_identity_count.1",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_control.exact_SHA_or_identity.2",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_control.exact_SHA_or_identity.3",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_control.exact_SHA_or_identity.4",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_control.exact_SHA_or_identity.5",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_control.frozen_identity_count.6",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_control.frozen_identity_count.7",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_control.frozen_identity_count.8",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_control.frozen_identity_count.9",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_control.exact_SHA_or_identity.10",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_control.frozen_identity_count.11",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_package.py",
+      "original_source_name": "TEST_STAGE_B_package.py",
+      "original_source_sha256": "6edb833500cafac947889c825df98b274e0d21c8218481184647c3803fe1314a",
+      "public_sha256": "c4a4ca7d840e837cfccc6d754221eab5b4ca5829cbba84bc9d5950728454e5cc",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_package.frozen_identity_count.1",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_package.frozen_identity_count.2",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_package.frozen_identity_count.3",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_C_caller.py",
+      "original_source_name": "TEST_STAGE_B_C_caller.py",
+      "original_source_sha256": "5485ec5aea29d395ca2a2b1686e86bc720b6c851843cfc249c838cf7659d9751",
+      "public_sha256": "7146184e1152d5cb6359db748266af5294f807383b25164b7efe8f9d627bc321",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_C_caller.frozen_identity_count.1",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_C_caller.exact_SHA_or_identity.2",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "key": "TEST_STAGE_B_C_caller.frozen_identity_count.3",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_C_caller.frozen_identity_count.4",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_C_caller.frozen_identity_count.5",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_C_caller.frozen_identity_count.6",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_C_caller.frozen_identity_count.7",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.py",
+      "original_source_name": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.py",
+      "original_source_sha256": "6abe96b181ce01356699dfb017504dc858f6cdc2cdd2e132a6674626f5f0bf23",
+      "public_sha256": "ae0027ee24f64e6fd9eaea5433568bee4df0bcd2cfabae9db1ff114abfb8e334",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.frozen_identity_count.1",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.frozen_identity_count.2",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.frozen_identity_count.3",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.frozen_identity_count.4",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.frozen_identity_count.5",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.frozen_identity_count.6",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.frozen_identity_count.7",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.frozen_identity_count.8",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_EXECUTION_FOUR_GATES_regression.exact_SHA_or_identity.9",
+          "kind": "exact_SHA_or_identity"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_CAL_RULE_IO_regression.py",
+      "original_source_name": "TEST_STAGE_B_CAL_RULE_IO_regression.py",
+      "original_source_sha256": "b6eb1dd20d741188289022d501617ed09c93b2c1a694834b2d414c6a9be7f8a6",
+      "public_sha256": "3c40a645bb40f59450d0bcd497f6b63bfe09bae2d029097209f4a94e7bfb86cb",
+      "changes": [
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_REPORT_P1_regression.py",
+      "original_source_name": "TEST_STAGE_B_REPORT_P1_regression.py",
+      "original_source_sha256": "4e8506c4fcfb3786fffec1d389f1ad7c62b36dcad2142f5404002ea7dc78bd07",
+      "public_sha256": "55bc2d0fd2a09aa7a5a9a29f087341bd15b94c1dc823ac53b8c62c2e39a36111",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_REPORT_P1_regression.frozen_identity_count.1",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_REPORT_P1_regression.frozen_identity_count.2",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
+    },
+    {
+      "public_path": "research/peak_assignment/TEST_STAGE_B_tests.py",
+      "original_source_name": "TEST_STAGE_B_tests.py",
+      "original_source_sha256": "66b269c5c72af77a8c66e68ae2a8824a12be82905e4b9885efbad40706e21531",
+      "public_sha256": "67749eca582a5cf3ef2330ff35ccb4d39829dcd8ec97bfea4cf88227e01f9327",
+      "changes": [
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.1",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.2",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.3",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.4",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.5",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.6",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.7",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.8",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "key": "TEST_STAGE_B_tests.frozen_identity_count.9",
+          "kind": "frozen_identity_count"
+        },
+        {
+          "kind": "authorization/child config seam",
+          "detail": "strict runtime authorization before CLI, external artifact paths and exact child runtime propagation; scientific gates/body/budgets preserved"
+        }
+      ],
+      "actual_run_source_equivalence_claim": false
     }
   ],
   "excluded_once_launchers": [
@@ -928,16 +1684,76 @@
   "execution_authorized_default": false,
   "support_files": [
     {
+      "path": "H_PARENT_A_README.md",
+      "sha256": "18b15bef8dcd323a9e06f5758c0f9b453fb5504d0d20dc3bbfbcff1452aa39d2"
+    },
+    {
+      "path": "H_RESUME_README.md",
+      "sha256": "ae42d85c9722e875613397c81db0a32201647de8ed89db04188f029ea191746f"
+    },
+    {
+      "path": "H_parent_A_source_delta.json",
+      "sha256": "0e09fa4ce9e2e9b47a863ed6108554fb60c3f52494dc7fb5461ae5c1dad48e50"
+    },
+    {
+      "path": "H_parent_A_synthetic_checks.py",
+      "sha256": "f7fe6a82704b286fbf476b8f8b9e475ded1a669b2863feb8702c54fe02582b70"
+    },
+    {
+      "path": "H_resume_source_delta.json",
+      "sha256": "679716a9a1cac64508e0f7ef43daae2e30c64468f0468325ae9538518adf0f2c"
+    },
+    {
+      "path": "H_resume_synthetic_checks.py",
+      "sha256": "83123731f4ac297c729c0bc69715d324a55af387a5a97cfa3dd94ce0916922c9"
+    },
+    {
+      "path": "PUBLIC_SOURCE_JSON_ALLOWLIST.json",
+      "sha256": "2b0a1b88479bc995926088a5e02f61cc73cdc03f7d1b8c07e3c491fd68e02bb3"
+    },
+    {
       "path": "README.md",
-      "sha256": "e1379a2216d4a9e5011c77c6f0aa2300b9b04082e91942149f968c562830801c"
+      "sha256": "1b5b1b170830af5ead4a7046f814572638d9984ffa1a805eb46f33482cf06487"
+    },
+    {
+      "path": "STAGE_B_README.md",
+      "sha256": "ff53fc11f5ecca0d33b71bbdb4b4d5872d0fa8a0b25f99f20ba23d0a65ddeee0"
+    },
+    {
+      "path": "Stage_B_source_delta.json",
+      "sha256": "4aa7308cb373c647c090b884641caef92e3a9d4a9c083579a381037d00687982"
+    },
+    {
+      "path": "Stage_B_synthetic_checks.py",
+      "sha256": "2b0e9b9d1a0ec4bd4ad5d8a590208dea92698ef58ce7c9c02ff4d3c961fa34e0"
     },
     {
       "path": "portable_runtime.py",
       "sha256": "64046c1192993bce138d878f3edb396a5ec479b7d6a2ee76aa638dcdf0f6d9cc"
     },
     {
+      "path": "portable_stage_runtime.py",
+      "sha256": "c7f1409af5e4573a5355239e63386968710d4a64786aa4c0b080c84de9a8693c"
+    },
+    {
       "path": "synthetic_checks.py",
-      "sha256": "6838e55427ab0a7106a7472323dcc11d6a54c35906328431188a5c1f43e05a2e"
+      "sha256": "cd2a49c8d33424a989a1082819b43f86f5699016ad37c1432240a3a5e1c2d0e5"
+    },
+    {
+      "path": "templates/H_parent_A_runtime_bindings.example.json",
+      "sha256": "dcb62a283421de136961b13e63e6d2aa791301d5a9956eecdc2ecae9a9d52337"
+    },
+    {
+      "path": "templates/H_resume_runtime_bindings.example.json",
+      "sha256": "2dedd2970862630a55c7bdee52669663fe4db63b323ef3086fe29dd66882c4ab"
+    },
+    {
+      "path": "templates/Stage_B_runtime_bindings.example.json",
+      "sha256": "497e9106ebfcec27c437325c8cf1413c96ee482b1cee3dc510345daa2a0565b3"
+    },
+    {
+      "path": "templates/complete_runtime_manifest.example.json",
+      "sha256": "7efa2f326ae7778e61c08451e6e60b53566caa16361c2e2534b0d06c6b14cdd9"
     },
     {
       "path": "templates/numerical_implementation_config.json",
@@ -959,5 +1775,41 @@
       "path": "templates/runtime_manifest.example.json",
       "sha256": "cc77fdf977cacb7efece6b954bf7d9c6532365cba396bb71915e1ede81c092e7"
     }
+  ],
+  "native220_existing_closure": {
+    "frozen_source_entries": 220,
+    "existing_native_entries": 216,
+    "remaining_existing_assignment_core": [
+      {
+        "path": "nmr_assignment/native_adapter.py",
+        "sha256": "c30a9223fb0b0e48d7fa6be3fe1b2533679a22abfb6ce95218e938f1671b547e",
+        "reason": "existing nmr_assignment pure import/graph/reference core; reused in place, no duplicate publication"
+      },
+      {
+        "path": "nmr_assignment/__init__.py",
+        "sha256": "083c9a46d9a9d61c983c9d8ebefba4914b0805e6bebba61224db2ca1b34d2916",
+        "reason": "existing nmr_assignment pure import/graph/reference core; reused in place, no duplicate publication"
+      },
+      {
+        "path": "nmr_assignment/contracts.py",
+        "sha256": "3b050e1f0258e701de859b19af6bacb3a5ed0fd4a2f6225ca5f35dbf79ee9b4b",
+        "reason": "existing nmr_assignment pure import/graph/reference core; reused in place, no duplicate publication"
+      },
+      {
+        "path": "nmr_assignment/mapping.py",
+        "sha256": "30eb844bdc330a91566064198578b9111c013c3832b64075f84590dbb91b28c4",
+        "reason": "existing nmr_assignment pure import/graph/reference core; reused in place, no duplicate publication"
+      }
+    ],
+    "duplicate_native_source_added": 0
+  },
+  "included_stable_scientific_groups": [
+    "reference",
+    "native cache and validation",
+    "lineage and frozen B0/B1/B2",
+    "evaluation/calibration/report",
+    "H parent and resume diagnostics",
+    "Stage A949 and C native-test producer",
+    "Stage B six entrypoints and referenced test source"
   ]
 }
