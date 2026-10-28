@@ -199,14 +199,13 @@ class ExecutionTests(unittest.TestCase):
 
 class ReceiptTests(unittest.TestCase):
     """合成 backend 日志只测试接线；绝不调用 solve_assignment。"""
-    def fixture(self):
+    def fixture(self,clock=100.):
         from nmr_assignment.execution import canonical_digest
         value=payload(); value["observations"]=[dict(observation_id="p0",ppm=0),dict(observation_id="p1",ppm=.1)]
         value["predictions"]["carriers"][1]["center_ppm"]=10
         def fake_stage(request,*,timeout_seconds,argv=None,raw_input=None):
             if raw_input is not None:
-                now=monotonic()
-                body=_prepare_record(raw_input,config(),started=now,total_deadline=now+10,pre_deadline=now+2)
+                body=_prepare_record(raw_input,config(),started=clock,total_deadline=clock+10,pre_deadline=clock+2)
             else:
                 obs=request["observation_ids"]; units=request["unit_ids"]
                 choices={(c["observation_id"],tuple(c["environment_ids"])):c["cost"] for c in request["candidates"]}
@@ -224,13 +223,16 @@ class ReceiptTests(unittest.TestCase):
                     attempts=[attempt("best",objective)]+[attempt("margin:"+o,objective+1) for o in obs],
                     execution_problem_sha256=canonical_digest(request))
             return dict(status="completed",result=body,process_reaped=True,child_pid=None,stdout="",stderr="")
-        now=monotonic()
-        with patch("nmr_assignment.execution._run_stage",side_effect=fake_stage):
-            body=_worker_record(encoded(value),config(),started=now,total_deadline=now+10,pre_deadline=now+2)
+        # 合成 backend 无真实等待；统一候选、worker 和回执时钟，避免运行机 uptime 的浮点舍入。
+        with patch("nmr_assignment.execution._run_stage",side_effect=fake_stage), \
+             patch("nmr_assignment.execution.monotonic",return_value=clock), \
+             patch("nmr_assignment.costs.monotonic",return_value=clock):
+            body=_worker_record(encoded(value),config(),started=clock,total_deadline=clock+10,pre_deadline=clock+2)
         from types import SimpleNamespace
         watchdog=SimpleNamespace(stdout=json.dumps(body),stderr="",timed_out=False,exit_code=0,
                                  process_reaped=True,child_pid=None)
-        with patch("nmr_assignment.watchdog.run_isolated",return_value=watchdog):
+        with patch("nmr_assignment.watchdog.run_isolated",return_value=watchdog), \
+             patch("nmr_assignment.execution.monotonic",return_value=clock):
             envelope=execute_record(encoded(value),approved_numeric_config=config(),input_id="synthetic",
                                     prediction_artifact_sha256="5"*64)
         return value,envelope
@@ -254,6 +256,16 @@ class ReceiptTests(unittest.TestCase):
             result=self.verify(value,envelope,method)
             self.assertTrue(result["certified"],result)
         self.assertEqual(envelope["execution_receipt"]["payload"]["input_binding"]["input_id"],"synthetic")
+
+    def test_roundoff_above_frozen_solver_caps_remains_uncertified(self):
+        value,envelope=self.fixture(clock=math.nextafter(32.,-math.inf))
+        self.assertTrue(self.verify(value,envelope,"B0")["certified"])
+        for method in ("B1","B2"):
+            controls=envelope["result"]["candidate_diagnostics"][method]["solver_request_parameters"]
+            self.assertGreater(controls["time_limit"],config()["budgets"][method+"_solver_seconds"])
+            result=self.verify(value,envelope,method)
+            self.assertFalse(result["certified"],result)
+            self.assertIn("execution_verification:solver controls differ from frozen config",result["reason_codes"])
 
     def test_changed_inputs_or_backend_payload_reject_old_receipt(self):
         value,envelope=self.fixture()
