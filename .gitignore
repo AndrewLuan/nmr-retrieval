@@ -42,6 +42,7 @@ research/peak_assignment/**/*.jsonl
 research/peak_assignment/**/*.log
 research/peak_assignment/**/*.json
 !research/peak_assignment/source_manifest.json
+!research/peak_assignment/h_assignment_margin/source_provenance.json
 !research/peak_assignment/templates/runtime_manifest.example.json
 !research/peak_assignment/templates/report_estimand_contract.json
 !research/peak_assignment/templates/outer_budget.example.json

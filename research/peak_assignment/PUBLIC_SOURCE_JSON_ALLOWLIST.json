@@ -7,6 +7,7 @@
     "Stage_B_source_delta.json",
     "conditional_completion_source_delta.json",
     "finite_delivery_source_delta.json",
+    "h_assignment_margin/source_provenance.json",
     "source_manifest.json",
     "source_relative_delivery_finite_schema.json",
     "templates/H_parent_A_runtime_bindings.example.json",

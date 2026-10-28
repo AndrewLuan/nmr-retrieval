@@ -1,0 +1,71 @@
+{
+  "schema": "H211_assignment_margin_source_publication_v1",
+  "source_only": true,
+  "experiment_artifact_name": "h-assignment-margin-20261028",
+  "executed_source": {
+    "trainer_sha256": "937c7eb989b830bbd1eb496cccd28a7e3025fb20f0e0eba58cdfc7c566a53b9b",
+    "package_manifest_sha256": "ba4a74d1bf87d8679e0d9d8612399574488078a614c8633276f3579ef9e35ece",
+    "completion_plan_sha256": "fe22a4dbd5235349361dc268b7f6eeee99f04f68535467cbedbada10290e003f",
+    "actual_failed_receipt_sha256": "0c56956fc8ffa262b85411375a586d657662301073db43ab49c57f0a011cedef",
+    "actual_execution_success": false
+  },
+  "offline_adapters": {
+    "executed_on_actual_predictions": false,
+    "evaluation_release": false,
+    "delta_manifest_sha256": "4c997e4b648921e63341602d095d3cbe7968bbfd1e9defadf370c59ffcd486f9"
+  },
+  "sources": [
+    {
+      "path": "nmr_assignment/assignment_margin.py",
+      "sha256": "3d725bde1497ae070429c3ee7c5713e8a96fc041cbc9a817c994f55d6d1d9726",
+      "bytes": 22256,
+      "source_artifact": "JJ_completion_package/source_bundle/nmr_assignment/assignment_margin.py",
+      "byte_identical_to_source_artifact": true
+    },
+    {
+      "path": "nmr_assignment/margin_admission.py",
+      "sha256": "0214d498570cd869f242a06533541b5ee5bb09b88a987477f5076decc571688d",
+      "bytes": 15282,
+      "source_artifact": "JJ_completion_package/source_bundle/nmr_assignment/margin_admission.py",
+      "byte_identical_to_source_artifact": true
+    },
+    {
+      "path": "nmr_transfer/h_assignment_margin_train.py",
+      "sha256": "937c7eb989b830bbd1eb496cccd28a7e3025fb20f0e0eba58cdfc7c566a53b9b",
+      "bytes": 42529,
+      "source_artifact": "JJ_completion_package/source_bundle/nmr_transfer/h_assignment_margin_train.py",
+      "byte_identical_to_source_artifact": true
+    },
+    {
+      "path": "research/peak_assignment/h_assignment_margin/launch_bounded_assignment_completion.py",
+      "sha256": "e5b9284a189444ae693943e3123fdf07d917cc031bcd5d2c84e750bf930de8e6",
+      "bytes": 18450,
+      "source_artifact": "JJ_completion_package/launch_bounded_assignment_completion.py",
+      "byte_identical_to_source_artifact": true
+    },
+    {
+      "path": "research/peak_assignment/h_assignment_margin/cache_adapter.py",
+      "sha256": "c0396317d40c4defc765efbe902ee86afd1f06994f0d867b11eaec8c20195cff",
+      "bytes": 36799,
+      "source_artifact": "JJ_evaluation_completion_compatibility/cache_adapter.py",
+      "byte_identical_to_source_artifact": true
+    },
+    {
+      "path": "research/peak_assignment/h_assignment_margin/score_adapter.py",
+      "sha256": "a0c8cc6e7143bc90362502f2d183e0cf9b3524a4456a4da4e7a0af76def3031f",
+      "bytes": 32165,
+      "source_artifact": "JJ_evaluation_completion_compatibility/score_adapter.py",
+      "byte_identical_to_source_artifact": true
+    },
+    {
+      "path": "research/peak_assignment/h_assignment_margin/paired_summary.py",
+      "sha256": "7db7be9b8a983d2e7a26df48b68a9626a7627a5fcffda9baf70915030c1f9fdb",
+      "bytes": 28848,
+      "source_artifact": "JJ_evaluation_completion_compatibility/paired_summary.py",
+      "byte_identical_to_source_artifact": true
+    }
+  ],
+  "prior_workspace_trainer_sha256": "149836ab71e612458b6fafa2018279b3db3d4e8998b831424311cc6dfcb7cc7f",
+  "publication_changes_runtime_semantics": false,
+  "private_inputs_weights_gold_or_runtime_releases_included": false
+}
